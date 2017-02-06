@@ -1,0 +1,4 @@
+vendor/
+.idea
+git_push.sh
+composer.lock
