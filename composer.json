@@ -1,7 +1,7 @@
 {
     "name": "nullx27/esi-php",
     "version": "0.1",
-    "description": "",
+    "description": "EVE Online ESI Api Client for PHP",
     "keywords": [
         "swagger",
         "php",
