@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**aggressor** | [**\nullx27\ESI\Models\GetWarsWarIdOkAggressor**](GetWarsWarIdOkAggressor.md) |  | [optional] 
-**allies** | [**\nullx27\ESI\Models\GetWarsWarIdOkAllies[]**](GetWarsWarIdOkAllies.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] 
+**aggressor** | [**\nullx27\ESI\Models\GetWarsWarIdAggressor**](GetWarsWarIdAggressor.md) |  | [optional] 
+**allies** | [**\nullx27\ESI\Models\GetWarsWarIdAlly[]**](GetWarsWarIdAlly.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] 
 **declared** | [**\DateTime**](\DateTime.md) | Time that the war was declared | 
-**defender** | [**\nullx27\ESI\Models\GetWarsWarIdOkDefender**](GetWarsWarIdOkDefender.md) |  | [optional] 
+**defender** | [**\nullx27\ESI\Models\GetWarsWarIdDefender**](GetWarsWarIdDefender.md) |  | [optional] 
 **finished** | [**\DateTime**](\DateTime.md) | Time the war ended and shooting was no longer allowed | [optional] 
 **id** | **int** | ID of the specified war | 
 **mutual** | **bool** | Was the war declared mutual by both parties | 

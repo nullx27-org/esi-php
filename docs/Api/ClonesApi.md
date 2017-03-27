@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdClones**
-> \nullx27\ESI\Models\GetCharactersCharacterIdClonesOk getCharactersCharacterIdClones($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdClonesOk getCharactersCharacterIdClones($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get clones
 
@@ -25,9 +25,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\ClonesApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdClones($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdClones($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ClonesApi->getCharactersCharacterIdClones: ', $e->getMessage(), PHP_EOL;
@@ -41,6 +44,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

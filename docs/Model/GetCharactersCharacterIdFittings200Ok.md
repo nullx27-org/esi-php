@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **string** | description string | 
 **fittingId** | **int** | fitting_id integer | 
-**items** | [**\nullx27\ESI\Models\CharacterscharacterIdfittingsItems[]**](CharacterscharacterIdfittingsItems.md) | items array | 
+**items** | [**\nullx27\ESI\Models\GetCharactersCharacterIdFittingsItem[]**](GetCharactersCharacterIdFittingsItem.md) | items array | 
 **name** | **string** | name string | 
 **shipTypeId** | **int** | ship_type_id integer | 
 

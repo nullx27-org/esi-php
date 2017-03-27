@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterId**
-> \nullx27\ESI\Models\GetCharactersCharacterIdOk getCharactersCharacterId($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdOk getCharactersCharacterId($characterId, $datasource, $userAgent, $xUserAgent)
 
 Get character's public information
 
@@ -26,9 +26,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\CharacterApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterId($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterId($characterId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->getCharactersCharacterId: ', $e->getMessage(), PHP_EOL;
@@ -42,6 +44,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -59,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdCorporationhistory**
-> \nullx27\ESI\Models\GetCharactersCharacterIdCorporationhistory200Ok[] getCharactersCharacterIdCorporationhistory($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdCorporationhistory200Ok[] getCharactersCharacterIdCorporationhistory($characterId, $datasource, $userAgent, $xUserAgent)
 
 Get corporation history
 
@@ -73,9 +77,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\CharacterApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdCorporationhistory($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdCorporationhistory($characterId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->getCharactersCharacterIdCorporationhistory: ', $e->getMessage(), PHP_EOL;
@@ -89,6 +95,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -106,7 +114,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdPortrait**
-> \nullx27\ESI\Models\GetCharactersCharacterIdPortraitOk getCharactersCharacterIdPortrait($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdPortraitOk getCharactersCharacterIdPortrait($characterId, $datasource, $userAgent, $xUserAgent)
 
 Get character portraits
 
@@ -120,9 +128,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\CharacterApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdPortrait($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdPortrait($characterId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->getCharactersCharacterIdPortrait: ', $e->getMessage(), PHP_EOL;
@@ -136,6 +146,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -153,7 +165,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersNames**
-> \nullx27\ESI\Models\GetCharactersNames200Ok[] getCharactersNames($characterIds, $datasource)
+> \nullx27\ESI\Models\GetCharactersNames200Ok[] getCharactersNames($characterIds, $datasource, $userAgent, $xUserAgent)
 
 Get character names
 
@@ -167,9 +179,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\CharacterApi();
 $characterIds = array(56); // int[] | A comma separated list of character IDs
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersNames($characterIds, $datasource);
+    $result = $api_instance->getCharactersNames($characterIds, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->getCharactersNames: ', $e->getMessage(), PHP_EOL;
@@ -183,6 +197,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterIds** | [**int[]**](../Model/int.md)| A comma separated list of character IDs |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -200,7 +216,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdCspa**
-> \nullx27\ESI\Models\PostCharactersCharacterIdCspaCreated postCharactersCharacterIdCspa($characterId, $characters, $datasource)
+> \nullx27\ESI\Models\PostCharactersCharacterIdCspaCreated postCharactersCharacterIdCspa($characterId, $characters, $datasource, $token, $userAgent, $xUserAgent)
 
 Calculate a CSPA charge cost
 
@@ -218,9 +234,12 @@ $api_instance = new nullx27\ESI\Api\CharacterApi();
 $characterId = 56; // int | An EVE character ID
 $characters = new \nullx27\ESI\Models\PostCharactersCharacterIdCspaCharacters(); // \nullx27\ESI\Models\PostCharactersCharacterIdCspaCharacters | The target characters to calculate the charge for
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->postCharactersCharacterIdCspa($characterId, $characters, $datasource);
+    $result = $api_instance->postCharactersCharacterIdCspa($characterId, $characters, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CharacterApi->postCharactersCharacterIdCspa: ', $e->getMessage(), PHP_EOL;
@@ -235,6 +254,9 @@ Name | Type | Description  | Notes
  **characterId** | **int**| An EVE character ID |
  **characters** | [**\nullx27\ESI\Models\PostCharactersCharacterIdCspaCharacters**](../Model/\nullx27\ESI\Models\PostCharactersCharacterIdCspaCharacters.md)| The target characters to calculate the charge for |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

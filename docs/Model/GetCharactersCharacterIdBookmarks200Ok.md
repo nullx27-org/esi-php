@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **memo** | **string** | memo string | 
 **note** | **string** | note string | 
 **ownerId** | **int** | owner_id integer | 
-**target** | [**\nullx27\ESI\Models\CharacterscharacterIdbookmarksTarget**](CharacterscharacterIdbookmarksTarget.md) |  | [optional] 
+**target** | [**\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksTarget**](GetCharactersCharacterIdBookmarksTarget.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

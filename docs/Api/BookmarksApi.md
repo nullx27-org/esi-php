@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdBookmarks**
-> \nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[] getCharactersCharacterIdBookmarks($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[] getCharactersCharacterIdBookmarks($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 List bookmarks
 
@@ -26,9 +26,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\BookmarksApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdBookmarks($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdBookmarks($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BookmarksApi->getCharactersCharacterIdBookmarks: ', $e->getMessage(), PHP_EOL;
@@ -42,6 +45,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -59,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdBookmarksFolders**
-> \nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[] getCharactersCharacterIdBookmarksFolders($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[] getCharactersCharacterIdBookmarksFolders($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 List bookmark folders
 
@@ -76,9 +82,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\BookmarksApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdBookmarksFolders($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdBookmarksFolders($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BookmarksApi->getCharactersCharacterIdBookmarksFolders: ', $e->getMessage(), PHP_EOL;
@@ -92,6 +101,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

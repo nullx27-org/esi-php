@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **capacity** | **float** | capacity number | [optional] 
 **description** | **string** | description string | 
-**dogmaAttributes** | [**\nullx27\ESI\Models\GetUniverseTypesTypeIdOkDogmaAttributes[]**](GetUniverseTypesTypeIdOkDogmaAttributes.md) | dogma_attributes array | [optional] 
-**dogmaEffects** | [**\nullx27\ESI\Models\GetUniverseTypesTypeIdOkDogmaEffects[]**](GetUniverseTypesTypeIdOkDogmaEffects.md) | dogma_effects array | [optional] 
+**dogmaAttributes** | [**\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]**](GetUniverseTypesTypeIdDogmaAttribute.md) | dogma_attributes array | [optional] 
+**dogmaEffects** | [**\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]**](GetUniverseTypesTypeIdDogmaEffect.md) | dogma_effects array | [optional] 
 **graphicId** | **int** | graphic_id integer | [optional] 
 **groupId** | **int** | group_id integer | 
 **iconId** | **int** | icon_id integer | [optional] 

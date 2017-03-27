@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdAssets**
-> \nullx27\ESI\Models\GetCharactersCharacterIdAssets200Ok[] getCharactersCharacterIdAssets($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdAssets200Ok[] getCharactersCharacterIdAssets($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character assets
 
@@ -25,9 +25,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\AssetsApi();
 $characterId = 56; // int | Character id of the target character
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdAssets($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdAssets($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AssetsApi->getCharactersCharacterIdAssets: ', $e->getMessage(), PHP_EOL;
@@ -41,6 +44,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| Character id of the target character |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

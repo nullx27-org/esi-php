@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**alliance** | [**\nullx27\ESI\Models\CorporationscorporationIdalliancehistoryAlliance**](CorporationscorporationIdalliancehistoryAlliance.md) |  | [optional] 
+**alliance** | [**\nullx27\ESI\Models\GetCorporationsCorporationIdAlliancehistoryAlliance**](GetCorporationsCorporationIdAlliancehistoryAlliance.md) |  | [optional] 
 **recordId** | **int** | An incrementing ID that can be used to canonically establish order of records in cases where dates may be ambiguous | 
 **startDate** | [**\DateTime**](\DateTime.md) | start_date string | 
 

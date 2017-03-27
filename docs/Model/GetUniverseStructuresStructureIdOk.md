@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | The full name of the structure | 
-**position** | [**\nullx27\ESI\Models\GetUniverseStructuresStructureIdOkPosition**](GetUniverseStructuresStructureIdOkPosition.md) |  | [optional] 
+**position** | [**\nullx27\ESI\Models\GetUniverseStructuresStructureIdPosition**](GetUniverseStructuresStructureIdPosition.md) |  | [optional] 
 **solarSystemId** | **int** | solar_system_id integer | 
 **typeId** | **int** | type_id integer | [optional] 
 

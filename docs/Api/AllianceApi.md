@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **getAlliances**
-> int[] getAlliances($datasource)
+> int[] getAlliances($datasource, $userAgent, $xUserAgent)
 
 List all alliances
 
@@ -25,9 +25,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new nullx27\ESI\Api\AllianceApi();
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getAlliances($datasource);
+    $result = $api_instance->getAlliances($datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliances: ', $e->getMessage(), PHP_EOL;
@@ -40,6 +42,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -57,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceId**
-> \nullx27\ESI\Models\GetAlliancesAllianceIdOk getAlliancesAllianceId($allianceId, $datasource)
+> \nullx27\ESI\Models\GetAlliancesAllianceIdOk getAlliancesAllianceId($allianceId, $datasource, $userAgent, $xUserAgent)
 
 Get alliance information
 
@@ -71,9 +75,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\AllianceApi();
 $allianceId = 56; // int | An Eve alliance ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getAlliancesAllianceId($allianceId, $datasource);
+    $result = $api_instance->getAlliancesAllianceId($allianceId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesAllianceId: ', $e->getMessage(), PHP_EOL;
@@ -87,6 +93,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allianceId** | **int**| An Eve alliance ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -104,7 +112,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdCorporations**
-> int[] getAlliancesAllianceIdCorporations($allianceId, $datasource)
+> int[] getAlliancesAllianceIdCorporations($allianceId, $datasource, $userAgent, $xUserAgent)
 
 List alliance's corporations
 
@@ -118,9 +126,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\AllianceApi();
 $allianceId = 56; // int | An EVE alliance ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getAlliancesAllianceIdCorporations($allianceId, $datasource);
+    $result = $api_instance->getAlliancesAllianceIdCorporations($allianceId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesAllianceIdCorporations: ', $e->getMessage(), PHP_EOL;
@@ -134,6 +144,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allianceId** | **int**| An EVE alliance ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -151,7 +163,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdIcons**
-> \nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($allianceId, $datasource)
+> \nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($allianceId, $datasource, $userAgent, $xUserAgent)
 
 Get alliance icon
 
@@ -165,9 +177,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\AllianceApi();
 $allianceId = 56; // int | An EVE alliance ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getAlliancesAllianceIdIcons($allianceId, $datasource);
+    $result = $api_instance->getAlliancesAllianceIdIcons($allianceId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesAllianceIdIcons: ', $e->getMessage(), PHP_EOL;
@@ -181,6 +195,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allianceId** | **int**| An EVE alliance ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -198,7 +214,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesNames**
-> \nullx27\ESI\Models\GetAlliancesNames200Ok[] getAlliancesNames($allianceIds, $datasource)
+> \nullx27\ESI\Models\GetAlliancesNames200Ok[] getAlliancesNames($allianceIds, $datasource, $userAgent, $xUserAgent)
 
 Get alliance names
 
@@ -212,9 +228,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\AllianceApi();
 $allianceIds = array(56); // int[] | A comma separated list of alliance IDs
 $datasource = "tranquility"; // string | The server name you would like data from
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getAlliancesNames($allianceIds, $datasource);
+    $result = $api_instance->getAlliancesNames($allianceIds, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AllianceApi->getAlliancesNames: ', $e->getMessage(), PHP_EOL;
@@ -228,6 +246,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allianceIds** | [**int[]**](../Model/int.md)| A comma separated list of alliance IDs |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

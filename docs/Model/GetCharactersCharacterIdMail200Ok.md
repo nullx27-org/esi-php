@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **isRead** | **bool** | is_read boolean | [optional] 
 **labels** | **int[]** | labels array | [optional] 
 **mailId** | **int** | mail_id integer | [optional] 
-**recipients** | [**\nullx27\ESI\Models\CharacterscharacterIdmailRecipients[]**](CharacterscharacterIdmailRecipients.md) | Recipients of the mail | [optional] 
+**recipients** | [**\nullx27\ESI\Models\GetCharactersCharacterIdMailRecipient[]**](GetCharactersCharacterIdMailRecipient.md) | Recipients of the mail | [optional] 
 **subject** | **string** | Mail subject | [optional] 
 **timestamp** | [**\DateTime**](\DateTime.md) | When the mail was sent | [optional] 
 

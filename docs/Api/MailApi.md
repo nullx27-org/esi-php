@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **deleteCharactersCharacterIdMailLabelsLabelId**
-> deleteCharactersCharacterIdMailLabelsLabelId($characterId, $labelId, $datasource)
+> deleteCharactersCharacterIdMailLabelsLabelId($characterId, $labelId, $datasource, $token, $userAgent, $xUserAgent)
 
 Delete a mail label
 
@@ -34,9 +34,12 @@ $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
 $labelId = 56; // int | An EVE label id
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $api_instance->deleteCharactersCharacterIdMailLabelsLabelId($characterId, $labelId, $datasource);
+    $api_instance->deleteCharactersCharacterIdMailLabelsLabelId($characterId, $labelId, $datasource, $token, $userAgent, $xUserAgent);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->deleteCharactersCharacterIdMailLabelsLabelId: ', $e->getMessage(), PHP_EOL;
 }
@@ -50,6 +53,9 @@ Name | Type | Description  | Notes
  **characterId** | **int**| An EVE character ID |
  **labelId** | **int**| An EVE label id |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -67,7 +73,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteCharactersCharacterIdMailMailId**
-> deleteCharactersCharacterIdMailMailId($characterId, $mailId, $datasource)
+> deleteCharactersCharacterIdMailMailId($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent)
 
 Delete a mail
 
@@ -85,9 +91,12 @@ $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
 $mailId = 56; // int | An EVE mail ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $api_instance->deleteCharactersCharacterIdMailMailId($characterId, $mailId, $datasource);
+    $api_instance->deleteCharactersCharacterIdMailMailId($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->deleteCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }
@@ -101,6 +110,9 @@ Name | Type | Description  | Notes
  **characterId** | **int**| An EVE character ID |
  **mailId** | **int**| An EVE mail ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -118,7 +130,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMail**
-> \nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[] getCharactersCharacterIdMail($characterId, $labels, $lastMailId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[] getCharactersCharacterIdMail($characterId, $datasource, $labels, $lastMailId, $token, $userAgent, $xUserAgent)
 
 Return mail headers
 
@@ -134,12 +146,15 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 
 $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
+$datasource = "tranquility"; // string | The server name you would like data from
 $labels = array(56); // int[] | Fetch only mails that match one or more of the given labels
 $lastMailId = 56; // int | List only mail with an ID lower than the given ID, if present
-$datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdMail($characterId, $labels, $lastMailId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdMail($characterId, $datasource, $labels, $lastMailId, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMail: ', $e->getMessage(), PHP_EOL;
@@ -152,9 +167,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
+ **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **labels** | [**int[]**](../Model/int.md)| Fetch only mails that match one or more of the given labels | [optional]
  **lastMailId** | **int**| List only mail with an ID lower than the given ID, if present | [optional]
- **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -172,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailLabels**
-> \nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk getCharactersCharacterIdMailLabels($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk getCharactersCharacterIdMailLabels($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get mail labels and unread counts
 
@@ -189,9 +207,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdMailLabels($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdMailLabels($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMailLabels: ', $e->getMessage(), PHP_EOL;
@@ -205,6 +226,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -222,7 +246,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailLists**
-> \nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[] getCharactersCharacterIdMailLists($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[] getCharactersCharacterIdMailLists($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Return mailing list subscriptions
 
@@ -239,9 +263,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdMailLists($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdMailLists($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMailLists: ', $e->getMessage(), PHP_EOL;
@@ -255,6 +282,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -272,7 +302,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailMailId**
-> \nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent)
 
 Return a mail
 
@@ -290,9 +320,12 @@ $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
 $mailId = 56; // int | An EVE mail ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->getCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
@@ -307,6 +340,9 @@ Name | Type | Description  | Notes
  **characterId** | **int**| An EVE character ID |
  **mailId** | **int**| An EVE mail ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -324,7 +360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdMail**
-> int postCharactersCharacterIdMail($characterId, $mail, $datasource)
+> int postCharactersCharacterIdMail($characterId, $mail, $datasource, $token, $userAgent, $xUserAgent)
 
 Send a new mail
 
@@ -342,9 +378,12 @@ $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | The sender's character ID
 $mail = new \nullx27\ESI\Models\PostCharactersCharacterIdMailMail(); // \nullx27\ESI\Models\PostCharactersCharacterIdMailMail | The mail to send
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->postCharactersCharacterIdMail($characterId, $mail, $datasource);
+    $result = $api_instance->postCharactersCharacterIdMail($characterId, $mail, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMail: ', $e->getMessage(), PHP_EOL;
@@ -359,6 +398,9 @@ Name | Type | Description  | Notes
  **characterId** | **int**| The sender&#39;s character ID |
  **mail** | [**\nullx27\ESI\Models\PostCharactersCharacterIdMailMail**](../Model/\nullx27\ESI\Models\PostCharactersCharacterIdMailMail.md)| The mail to send |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -376,7 +418,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdMailLabels**
-> int postCharactersCharacterIdMailLabels($characterId, $label, $datasource)
+> int postCharactersCharacterIdMailLabels($characterId, $datasource, $label, $token, $userAgent, $xUserAgent)
 
 Create a mail label
 
@@ -392,11 +434,14 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 
 $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
-$label = new \nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel(); // \nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel | Label to create
 $datasource = "tranquility"; // string | The server name you would like data from
+$label = new \nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel(); // \nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel | Label to create
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->postCharactersCharacterIdMailLabels($characterId, $label, $datasource);
+    $result = $api_instance->postCharactersCharacterIdMailLabels($characterId, $datasource, $label, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->postCharactersCharacterIdMailLabels: ', $e->getMessage(), PHP_EOL;
@@ -409,8 +454,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
- **label** | [**\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel**](../Model/\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel.md)| Label to create | [optional]
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **label** | [**\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel**](../Model/\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel.md)| Label to create | [optional]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -428,7 +476,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putCharactersCharacterIdMailMailId**
-> putCharactersCharacterIdMailMailId($characterId, $mailId, $contents, $datasource)
+> putCharactersCharacterIdMailMailId($characterId, $contents, $mailId, $datasource, $token, $userAgent, $xUserAgent)
 
 Update metadata about a mail
 
@@ -444,12 +492,15 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 
 $api_instance = new nullx27\ESI\Api\MailApi();
 $characterId = 56; // int | An EVE character ID
-$mailId = 56; // int | An EVE mail ID
 $contents = new \nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents(); // \nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
+$mailId = 56; // int | An EVE mail ID
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $api_instance->putCharactersCharacterIdMailMailId($characterId, $mailId, $contents, $datasource);
+    $api_instance->putCharactersCharacterIdMailMailId($characterId, $contents, $mailId, $datasource, $token, $userAgent, $xUserAgent);
 } catch (Exception $e) {
     echo 'Exception when calling MailApi->putCharactersCharacterIdMailMailId: ', $e->getMessage(), PHP_EOL;
 }
@@ -461,9 +512,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
- **mailId** | **int**| An EVE mail ID |
  **contents** | [**\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents**](../Model/\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents.md)| Data used to update the mail |
+ **mailId** | **int**| An EVE mail ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 

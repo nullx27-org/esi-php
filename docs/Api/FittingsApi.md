@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **deleteCharactersCharacterIdFittingsFittingId**
-> deleteCharactersCharacterIdFittingsFittingId($characterId, $fittingId, $datasource)
+> deleteCharactersCharacterIdFittingsFittingId($characterId, $fittingId, $datasource, $token, $userAgent, $xUserAgent)
 
 Delete fitting
 
@@ -28,9 +28,12 @@ $api_instance = new nullx27\ESI\Api\FittingsApi();
 $characterId = 56; // int | ID for a character
 $fittingId = 56; // int | ID for a fitting of this character
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $api_instance->deleteCharactersCharacterIdFittingsFittingId($characterId, $fittingId, $datasource);
+    $api_instance->deleteCharactersCharacterIdFittingsFittingId($characterId, $fittingId, $datasource, $token, $userAgent, $xUserAgent);
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->deleteCharactersCharacterIdFittingsFittingId: ', $e->getMessage(), PHP_EOL;
 }
@@ -44,6 +47,9 @@ Name | Type | Description  | Notes
  **characterId** | **int**| ID for a character |
  **fittingId** | **int**| ID for a fitting of this character |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -61,7 +67,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdFittings**
-> \nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($characterId, $datasource)
+> \nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get fittings
 
@@ -78,9 +84,12 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 $api_instance = new nullx27\ESI\Api\FittingsApi();
 $characterId = 56; // int | ID for a character
 $datasource = "tranquility"; // string | The server name you would like data from
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getCharactersCharacterIdFittings($characterId, $datasource);
+    $result = $api_instance->getCharactersCharacterIdFittings($characterId, $datasource, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->getCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;
@@ -94,6 +103,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| ID for a character |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
@@ -111,7 +123,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdFittings**
-> \nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($characterId, $fitting, $datasource)
+> \nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($characterId, $datasource, $fitting, $token, $userAgent, $xUserAgent)
 
 Create fitting
 
@@ -127,11 +139,14 @@ nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCES
 
 $api_instance = new nullx27\ESI\Api\FittingsApi();
 $characterId = 56; // int | ID for a character
-$fitting = new \nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting(); // \nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting | Details about the new fitting
 $datasource = "tranquility"; // string | The server name you would like data from
+$fitting = new \nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting(); // \nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting | Details about the new fitting
+$token = "token_example"; // string | Access token to use, if preferred over a header
+$userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
+$xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->postCharactersCharacterIdFittings($characterId, $fitting, $datasource);
+    $result = $api_instance->postCharactersCharacterIdFittings($characterId, $datasource, $fitting, $token, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling FittingsApi->postCharactersCharacterIdFittings: ', $e->getMessage(), PHP_EOL;
@@ -144,8 +159,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| ID for a character |
- **fitting** | [**\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting**](../Model/\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting | [optional]
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
+ **fitting** | [**\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting**](../Model/\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting | [optional]
+ **token** | **string**| Access token to use, if preferred over a header | [optional]
+ **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
+ **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
