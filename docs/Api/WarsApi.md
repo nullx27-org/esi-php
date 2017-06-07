@@ -126,7 +126,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new nullx27\ESI\Api\WarsApi();
 $warId = 56; // int | A valid war ID
 $datasource = "tranquility"; // string | The server name you would like data from
-$page = 1; // int | Which page to query, starting at 1, 2000 killmails per page.
+$page = 1; // int | Which page to query, starting at 1
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **warId** | **int**| A valid war ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **page** | **int**| Which page to query, starting at 1, 2000 killmails per page. | [optional] [default to 1]
+ **page** | **int**| Which page to query, starting at 1 | [optional] [default to 1]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
  **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
