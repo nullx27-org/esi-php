@@ -1,4 +1,4 @@
-# nullx27\ESI\InsuranceApi
+# nullx27ESI\InsuranceApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -8,25 +8,29 @@ Method | HTTP request | Description
 
 
 # **getInsurancePrices**
-> \nullx27\ESI\Models\GetInsurancePrices200Ok[] getInsurancePrices($datasource, $language, $userAgent, $xUserAgent)
+> \nullx27ESI\nullx27\ESI\Models\GetInsurancePrices200Ok[] getInsurancePrices($datasource, $language, $userAgent, $xUserAgent)
 
 List insurance levels
 
-Return available insurance levels for all ship types  ---  Alternate route: `/v1/insurance/prices/`  Alternate route: `/legacy/insurance/prices/`  Alternate route: `/dev/insurance/prices/`   ---  This route is cached for up to 3600 seconds
+Return available insurance levels for all ship types  --- Alternate route: `/dev/insurance/prices/`  Alternate route: `/legacy/insurance/prices/`  Alternate route: `/v1/insurance/prices/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new nullx27\ESI\Api\InsuranceApi();
+$apiInstance = new nullx27ESI\Api\InsuranceApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $language = "en-us"; // string | Language to use in the response
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getInsurancePrices($datasource, $language, $userAgent, $xUserAgent);
+    $result = $apiInstance->getInsurancePrices($datasource, $language, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling InsuranceApi->getInsurancePrices: ', $e->getMessage(), PHP_EOL;
@@ -45,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27\ESI\Models\GetInsurancePrices200Ok[]**](../Model/GetInsurancePrices200Ok.md)
+[**\nullx27ESI\nullx27\ESI\Models\GetInsurancePrices200Ok[]**](../Model/GetInsurancePrices200Ok.md)
 
 ### Authorization
 

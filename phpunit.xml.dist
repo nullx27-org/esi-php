@@ -14,8 +14,8 @@
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src/Api</directory>
-            <directory suffix=".php">./src/Models</directory>
+            <directory suffix=".php">./src/nullx27/ESI/Api</directory>
+            <directory suffix=".php">./src/nullx27/ESI/Models</directory>
         </whitelist>
     </filter>
 </phpunit>

@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **string** | description string | 
 **marketGroupId** | **int** | market_group_id integer | 
 **name** | **string** | name string | 
-**parentGroupId** | **int** | parent_group_id integer | [optional] 
+**description** | **string** | description string | 
 **types** | **int[]** | types array | 
+**parentGroupId** | **int** | parent_group_id integer | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

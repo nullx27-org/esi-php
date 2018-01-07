@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**allianceId** | **int** | alliance_id integer | [optional] 
 **characterId** | **int** | character_id integer | [optional] 
 **corporationId** | **int** | corporation_id integer | [optional] 
-**damageDone** | **int** | damage_done integer | 
+**allianceId** | **int** | alliance_id integer | [optional] 
 **factionId** | **int** | faction_id integer | [optional] 
-**finalBlow** | **bool** | Was the attacker the one to achieve the final blow | 
 **securityStatus** | **float** | Security status for the attacker | 
+**finalBlow** | **bool** | Was the attacker the one to achieve the final blow | 
+**damageDone** | **int** | damage_done integer | 
 **shipTypeId** | **int** | What ship was the attacker flying | [optional] 
 **weaponTypeId** | **int** | What weapon was used by the attacker for the kill | [optional] 
 

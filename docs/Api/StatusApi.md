@@ -1,4 +1,4 @@
-# nullx27\ESI\StatusApi
+# nullx27ESI\StatusApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -8,24 +8,28 @@ Method | HTTP request | Description
 
 
 # **getStatus**
-> \nullx27\ESI\Models\GetStatusOk getStatus($datasource, $userAgent, $xUserAgent)
+> \nullx27ESI\nullx27\ESI\Models\GetStatusOk getStatus($datasource, $userAgent, $xUserAgent)
 
 Retrieve the uptime and player counts
 
-EVE Server status  ---  Alternate route: `/v1/status/`  Alternate route: `/legacy/status/`  Alternate route: `/dev/status/`   ---  This route is cached for up to 30 seconds
+EVE Server status  --- Alternate route: `/dev/status/`  Alternate route: `/legacy/status/`  Alternate route: `/v1/status/`  --- This route is cached for up to 30 seconds
 
 ### Example
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new nullx27\ESI\Api\StatusApi();
+$apiInstance = new nullx27ESI\Api\StatusApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getStatus($datasource, $userAgent, $xUserAgent);
+    $result = $apiInstance->getStatus($datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling StatusApi->getStatus: ', $e->getMessage(), PHP_EOL;
@@ -43,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27\ESI\Models\GetStatusOk**](../Model/GetStatusOk.md)
+[**\nullx27ESI\nullx27\ESI\Models\GetStatusOk**](../Model/GetStatusOk.md)
 
 ### Authorization
 

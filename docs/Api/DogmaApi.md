@@ -1,4 +1,4 @@
-# nullx27\ESI\DogmaApi
+# nullx27ESI\DogmaApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -15,20 +15,24 @@ Method | HTTP request | Description
 
 Get attributes
 
-Get a list of dogma attribute ids  ---  Alternate route: `/v1/dogma/attributes/`  Alternate route: `/legacy/dogma/attributes/`  Alternate route: `/dev/dogma/attributes/`   ---  This route is cached for up to 3600 seconds
+Get a list of dogma attribute ids  --- Alternate route: `/dev/dogma/attributes/`  Alternate route: `/legacy/dogma/attributes/`  Alternate route: `/v1/dogma/attributes/`  --- This route expires daily at 11:05
 
 ### Example
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new nullx27\ESI\Api\DogmaApi();
+$apiInstance = new nullx27ESI\Api\DogmaApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getDogmaAttributes($datasource, $userAgent, $xUserAgent);
+    $result = $apiInstance->getDogmaAttributes($datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DogmaApi->getDogmaAttributes: ', $e->getMessage(), PHP_EOL;
@@ -60,25 +64,29 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDogmaAttributesAttributeId**
-> \nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk getDogmaAttributesAttributeId($attributeId, $datasource, $userAgent, $xUserAgent)
+> \nullx27ESI\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk getDogmaAttributesAttributeId($attributeId, $datasource, $userAgent, $xUserAgent)
 
 Get attribute information
 
-Get information on a dogma attribute  ---  Alternate route: `/v1/dogma/attributes/{attribute_id}/`  Alternate route: `/legacy/dogma/attributes/{attribute_id}/`  Alternate route: `/dev/dogma/attributes/{attribute_id}/`   ---  This route is cached for up to 3600 seconds
+Get information on a dogma attribute  --- Alternate route: `/dev/dogma/attributes/{attribute_id}/`  Alternate route: `/legacy/dogma/attributes/{attribute_id}/`  Alternate route: `/v1/dogma/attributes/{attribute_id}/`  --- This route expires daily at 11:05
 
 ### Example
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new nullx27\ESI\Api\DogmaApi();
+$apiInstance = new nullx27ESI\Api\DogmaApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $attributeId = 56; // int | A dogma attribute ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getDogmaAttributesAttributeId($attributeId, $datasource, $userAgent, $xUserAgent);
+    $result = $apiInstance->getDogmaAttributesAttributeId($attributeId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DogmaApi->getDogmaAttributesAttributeId: ', $e->getMessage(), PHP_EOL;
@@ -97,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk**](../Model/GetDogmaAttributesAttributeIdOk.md)
+[**\nullx27ESI\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk**](../Model/GetDogmaAttributesAttributeIdOk.md)
 
 ### Authorization
 
@@ -115,20 +123,24 @@ No authorization required
 
 Get effects
 
-Get a list of dogma effect ids  ---  Alternate route: `/v1/dogma/effects/`  Alternate route: `/legacy/dogma/effects/`  Alternate route: `/dev/dogma/effects/`   ---  This route is cached for up to 3600 seconds
+Get a list of dogma effect ids  --- Alternate route: `/dev/dogma/effects/`  Alternate route: `/legacy/dogma/effects/`  Alternate route: `/v1/dogma/effects/`  --- This route expires daily at 11:05
 
 ### Example
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new nullx27\ESI\Api\DogmaApi();
+$apiInstance = new nullx27ESI\Api\DogmaApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getDogmaEffects($datasource, $userAgent, $xUserAgent);
+    $result = $apiInstance->getDogmaEffects($datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DogmaApi->getDogmaEffects: ', $e->getMessage(), PHP_EOL;
@@ -160,25 +172,29 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDogmaEffectsEffectId**
-> \nullx27\ESI\Models\GetDogmaEffectsEffectIdOk getDogmaEffectsEffectId($effectId, $datasource, $userAgent, $xUserAgent)
+> \nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk getDogmaEffectsEffectId($effectId, $datasource, $userAgent, $xUserAgent)
 
 Get effect information
 
-Get information on a dogma effect  ---  Alternate route: `/v1/dogma/effects/{effect_id}/`  Alternate route: `/legacy/dogma/effects/{effect_id}/`   ---  This route is cached for up to 3600 seconds
+Get information on a dogma effect  --- Alternate route: `/dev/dogma/effects/{effect_id}/`  Alternate route: `/v2/dogma/effects/{effect_id}/`  --- This route expires daily at 11:05
 
 ### Example
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new nullx27\ESI\Api\DogmaApi();
+$apiInstance = new nullx27ESI\Api\DogmaApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $effectId = 56; // int | A dogma effect ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
 
 try {
-    $result = $api_instance->getDogmaEffectsEffectId($effectId, $datasource, $userAgent, $xUserAgent);
+    $result = $apiInstance->getDogmaEffectsEffectId($effectId, $datasource, $userAgent, $xUserAgent);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DogmaApi->getDogmaEffectsEffectId: ', $e->getMessage(), PHP_EOL;
@@ -197,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk**](../Model/GetDogmaEffectsEffectIdOk.md)
+[**\nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk**](../Model/GetDogmaEffectsEffectIdOk.md)
 
 ### Authorization
 

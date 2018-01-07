@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**isSingleton** | **bool** | is_singleton boolean | 
-**itemId** | **int** | item_id integer | 
-**locationFlag** | **string** | location_flag string | 
+**typeId** | **int** | type_id integer | 
+**quantity** | **int** | quantity integer | 
 **locationId** | **int** | location_id integer | 
 **locationType** | **string** | location_type string | 
-**quantity** | **int** | quantity integer | [optional] 
-**typeId** | **int** | type_id integer | 
+**itemId** | **int** | item_id integer | 
+**locationFlag** | **string** | location_flag string | 
+**isSingleton** | **bool** | is_singleton boolean | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
