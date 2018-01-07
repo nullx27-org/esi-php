@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * ClonesApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class ClonesApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk
      */
     public function getCharactersCharacterIdClones($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -114,13 +114,13 @@ class ClonesApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdClonesWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk';
         $request = $this->getCharactersCharacterIdClonesRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -172,7 +172,7 @@ class ClonesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class ClonesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class ClonesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class ClonesApi
      */
     public function getCharactersCharacterIdClonesAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk';
         $request = $this->getCharactersCharacterIdClonesRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -415,7 +415,7 @@ class ClonesApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -436,7 +436,7 @@ class ClonesApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -502,7 +502,7 @@ class ClonesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class ClonesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

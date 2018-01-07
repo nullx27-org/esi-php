@@ -1,4 +1,4 @@
-# nullx27ESI\IndustryApi
+# nullx27\ESI\IndustryApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdIndustryJobs**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdIndustryJobs200Ok[] getCharactersCharacterIdIndustryJobs($characterId, $datasource, $includeCompleted, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdIndustryJobs200Ok[] getCharactersCharacterIdIndustryJobs($characterId, $datasource, $includeCompleted, $token, $userAgent, $xUserAgent)
 
 List character industry jobs
 
@@ -27,9 +27,9 @@ List industry jobs placed by a character  --- Alternate route: `/dev/characters/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdIndustryJobs200Ok[]**](../Model/GetCharactersCharacterIdIndustryJobs200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdIndustryJobs200Ok[]**](../Model/GetCharactersCharacterIdIndustryJobs200Ok.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMining**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMining200Ok[] getCharactersCharacterIdMining($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMining200Ok[] getCharactersCharacterIdMining($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Character mining ledger
 
@@ -90,9 +90,9 @@ Paginated record of all mining done by a character for the past 30 days   --- Al
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMining200Ok[]**](../Model/GetCharactersCharacterIdMining200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMining200Ok[]**](../Model/GetCharactersCharacterIdMining200Ok.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationCorporationIdMiningExtractions**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningExtractions200Ok[] getCorporationCorporationIdMiningExtractions($corporationId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningExtractions200Ok[] getCorporationCorporationIdMiningExtractions($corporationId, $datasource, $token, $userAgent, $xUserAgent)
 
 Moon extraction timers
 
@@ -153,9 +153,9 @@ Extraction timers for all moon chunks being extracted by refineries belonging to
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningExtractions200Ok[]**](../Model/GetCorporationCorporationIdMiningExtractions200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningExtractions200Ok[]**](../Model/GetCorporationCorporationIdMiningExtractions200Ok.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationCorporationIdMiningObservers**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObservers200Ok[] getCorporationCorporationIdMiningObservers($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObservers200Ok[] getCorporationCorporationIdMiningObservers($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Corporation mining observers
 
@@ -214,9 +214,9 @@ Paginated list of all entities capable of observing and recording mining for a c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObservers200Ok[]**](../Model/GetCorporationCorporationIdMiningObservers200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObservers200Ok[]**](../Model/GetCorporationCorporationIdMiningObservers200Ok.md)
 
 ### Authorization
 
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationCorporationIdMiningObserversObserverId**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObserversObserverId200Ok[] getCorporationCorporationIdMiningObserversObserverId($corporationId, $observerId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObserversObserverId200Ok[] getCorporationCorporationIdMiningObserversObserverId($corporationId, $observerId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Observed corporation mining
 
@@ -277,9 +277,9 @@ Paginated record of all mining seen by an observer   --- Alternate route: `/dev/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObserversObserverId200Ok[]**](../Model/GetCorporationCorporationIdMiningObserversObserverId200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationCorporationIdMiningObserversObserverId200Ok[]**](../Model/GetCorporationCorporationIdMiningObserversObserverId200Ok.md)
 
 ### Authorization
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdIndustryJobs**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdIndustryJobs200Ok[] getCorporationsCorporationIdIndustryJobs($corporationId, $datasource, $includeCompleted, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdIndustryJobs200Ok[] getCorporationsCorporationIdIndustryJobs($corporationId, $datasource, $includeCompleted, $page, $token, $userAgent, $xUserAgent)
 
 List corporation industry jobs
 
@@ -342,9 +342,9 @@ List industry jobs run by a corporation  --- Alternate route: `/dev/corporations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -381,7 +381,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdIndustryJobs200Ok[]**](../Model/GetCorporationsCorporationIdIndustryJobs200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdIndustryJobs200Ok[]**](../Model/GetCorporationsCorporationIdIndustryJobs200Ok.md)
 
 ### Authorization
 
@@ -395,7 +395,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIndustryFacilities**
-> \nullx27ESI\nullx27\ESI\Models\GetIndustryFacilities200Ok[] getIndustryFacilities($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetIndustryFacilities200Ok[] getIndustryFacilities($datasource, $userAgent, $xUserAgent)
 
 List industry facilities
 
@@ -406,7 +406,7 @@ Return a list of industry facilities  --- Alternate route: `/dev/industry/facili
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetIndustryFacilities200Ok[]**](../Model/GetIndustryFacilities200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetIndustryFacilities200Ok[]**](../Model/GetIndustryFacilities200Ok.md)
 
 ### Authorization
 
@@ -448,7 +448,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIndustrySystems**
-> \nullx27ESI\nullx27\ESI\Models\GetIndustrySystems200Ok[] getIndustrySystems($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetIndustrySystems200Ok[] getIndustrySystems($datasource, $userAgent, $xUserAgent)
 
 List solar system cost indices
 
@@ -459,7 +459,7 @@ Return cost indices for solar systems  --- Alternate route: `/dev/industry/syste
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\IndustryApi(
+$apiInstance = new nullx27\ESI\Api\IndustryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -487,7 +487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetIndustrySystems200Ok[]**](../Model/GetIndustrySystems200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetIndustrySystems200Ok[]**](../Model/GetIndustrySystems200Ok.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsCorporationsVictoryPoints Class Doc Comment
  *
  * @category Class
  * @description Top 10 rankings of corporations by victory points from yesterday, last week and in total
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'yesterday' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday1[]',
-        'lastWeek' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek1[]',
-        'activeTotal' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal1[]'
+        'yesterday' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday1[]',
+        'lastWeek' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek1[]',
+        'activeTotal' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal1[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
     /**
      * Gets yesterday
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday1[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday1[]
      */
     public function getYesterday()
     {
@@ -249,7 +249,7 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
     /**
      * Sets yesterday
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday1[] $yesterday Top 10 ranking of corporations by victory points in the past day
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday1[] $yesterday Top 10 ranking of corporations by victory points in the past day
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
     /**
      * Gets lastWeek
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek1[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek1[]
      */
     public function getLastWeek()
     {
@@ -273,7 +273,7 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
     /**
      * Sets lastWeek
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek1[] $lastWeek Top 10 ranking of corporations by victory points in the past week
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek1[] $lastWeek Top 10 ranking of corporations by victory points in the past week
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
     /**
      * Gets activeTotal
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal1[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal1[]
      */
     public function getActiveTotal()
     {
@@ -297,7 +297,7 @@ class GetFwLeaderboardsCorporationsVictoryPoints implements ModelInterface, Arra
     /**
      * Sets activeTotal
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal1[] $activeTotal Top 10 ranking of corporations active in faction warfare by total victory points. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days.
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal1[] $activeTotal Top 10 ranking of corporations active in faction warfare by total victory points. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days.
      *
      * @return $this
      */

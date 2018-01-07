@@ -1,4 +1,4 @@
-# nullx27ESI\UserInterfaceApi
+# nullx27\ESI\UserInterfaceApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -24,9 +24,9 @@ Set a solar system as autopilot waypoint  --- Alternate route: `/dev/ui/autopilo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\UserInterfaceApi(
+$apiInstance = new nullx27\ESI\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -88,9 +88,9 @@ Open the contract window inside the client  --- Alternate route: `/dev/ui/openwi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\UserInterfaceApi(
+$apiInstance = new nullx27\ESI\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -148,9 +148,9 @@ Open the information window for a character, corporation or alliance inside the 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\UserInterfaceApi(
+$apiInstance = new nullx27\ESI\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -208,9 +208,9 @@ Open the market details window for a specific typeID inside the client  --- Alte
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\UserInterfaceApi(
+$apiInstance = new nullx27\ESI\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -268,15 +268,15 @@ Open the New Mail window, according to settings from the request if applicable  
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\UserInterfaceApi(
+$apiInstance = new nullx27\ESI\Api\UserInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$newMail = new \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail(); // \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail | The details of mail to create
+$newMail = new \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail(); // \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail | The details of mail to create
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -294,7 +294,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **newMail** | [**\nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail**](../Model/PostUiOpenwindowNewmailNewMail.md)| The details of mail to create |
+ **newMail** | [**\nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail**](../Model/PostUiOpenwindowNewmailNewMail.md)| The details of mail to create |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]

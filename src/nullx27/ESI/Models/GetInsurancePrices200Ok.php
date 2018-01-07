@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetInsurancePrices200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'typeId' => 'int',
-        'levels' => '\nullx27ESI\nullx27\ESI\Models\GetInsurancePricesLevel[]'
+        'levels' => '\nullx27\ESI\nullx27\ESI\Models\GetInsurancePricesLevel[]'
     ];
 
     /**
@@ -251,7 +251,7 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets levels
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetInsurancePricesLevel[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetInsurancePricesLevel[]
      */
     public function getLevels()
     {
@@ -261,7 +261,7 @@ class GetInsurancePrices200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets levels
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetInsurancePricesLevel[] $levels A list of a available insurance levels for this ship type
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetInsurancePricesLevel[] $levels A list of a available insurance levels for this ship type
      *
      * @return $this
      */

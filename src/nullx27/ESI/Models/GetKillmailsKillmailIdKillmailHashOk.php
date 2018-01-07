@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetKillmailsKillmailIdKillmailHashOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class GetKillmailsKillmailIdKillmailHashOk implements ModelInterface, ArrayAcces
     protected static $swaggerTypes = [
         'killmailId' => 'int',
         'killmailTime' => '\DateTime',
-        'victim' => '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashVictim',
-        'attackers' => '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashAttacker[]',
+        'victim' => '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashVictim',
+        'attackers' => '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashAttacker[]',
         'solarSystemId' => 'int',
         'moonId' => 'int',
         'warId' => 'int'
@@ -323,7 +323,7 @@ class GetKillmailsKillmailIdKillmailHashOk implements ModelInterface, ArrayAcces
     /**
      * Gets victim
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashVictim
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashVictim
      */
     public function getVictim()
     {
@@ -333,7 +333,7 @@ class GetKillmailsKillmailIdKillmailHashOk implements ModelInterface, ArrayAcces
     /**
      * Sets victim
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashVictim $victim victim
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashVictim $victim victim
      *
      * @return $this
      */
@@ -347,7 +347,7 @@ class GetKillmailsKillmailIdKillmailHashOk implements ModelInterface, ArrayAcces
     /**
      * Gets attackers
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashAttacker[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashAttacker[]
      */
     public function getAttackers()
     {
@@ -357,7 +357,7 @@ class GetKillmailsKillmailIdKillmailHashOk implements ModelInterface, ArrayAcces
     /**
      * Sets attackers
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashAttacker[] $attackers attackers array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashAttacker[] $attackers attackers array
      *
      * @return $this
      */

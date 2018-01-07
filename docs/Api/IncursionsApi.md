@@ -1,4 +1,4 @@
-# nullx27ESI\IncursionsApi
+# nullx27\ESI\IncursionsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getIncursions**
-> \nullx27ESI\nullx27\ESI\Models\GetIncursions200Ok[] getIncursions($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetIncursions200Ok[] getIncursions($datasource, $userAgent, $xUserAgent)
 
 List incursions
 
@@ -19,7 +19,7 @@ Return a list of current incursions  --- Alternate route: `/dev/incursions/`  Al
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\IncursionsApi(
+$apiInstance = new nullx27\ESI\Api\IncursionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetIncursions200Ok[]**](../Model/GetIncursions200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetIncursions200Ok[]**](../Model/GetIncursions200Ok.md)
 
 ### Authorization
 

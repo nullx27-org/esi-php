@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **reason** | **string** | reason string | [optional] 
 **taxReceiverId** | **int** | the corporation ID receiving any tax paid | [optional] 
 **tax** | **double** | Tax amount received for tax related transactions | [optional] 
-**extraInfo** | [**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletJournalExtraInfo**](GetCharactersCharacterIdWalletJournalExtraInfo.md) |  | [optional] 
+**extraInfo** | [**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletJournalExtraInfo**](GetCharactersCharacterIdWalletJournalExtraInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

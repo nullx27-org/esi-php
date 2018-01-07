@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * FleetsApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\DeleteFleetsFleetIdMembersMemberIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\DeleteFleetsFleetIdMembersMemberIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -402,7 +402,7 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -423,7 +423,7 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -467,7 +467,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -475,7 +475,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\DeleteFleetsFleetIdSquadsSquadIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\DeleteFleetsFleetIdSquadsSquadIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -483,7 +483,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -710,7 +710,7 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -731,7 +731,7 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -775,7 +775,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\DeleteFleetsFleetIdWingsWingIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\DeleteFleetsFleetIdWingsWingIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -791,7 +791,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1017,9 +1017,9 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk
      */
     public function getCharactersCharacterIdFleet($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1038,13 +1038,13 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdFleetWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk';
         $request = $this->getCharactersCharacterIdFleetRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1096,7 +1096,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1104,7 +1104,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1112,7 +1112,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1120,7 +1120,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1170,7 +1170,7 @@ class FleetsApi
      */
     public function getCharactersCharacterIdFleetAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk';
         $request = $this->getCharactersCharacterIdFleetRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1347,9 +1347,9 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk
      */
     public function getFleetsFleetId($fleetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1368,13 +1368,13 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFleetsFleetIdWithHttpInfo($fleetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk';
         $request = $this->getFleetsFleetIdRequest($fleetId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1426,7 +1426,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1434,7 +1434,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1442,7 +1442,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1450,7 +1450,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1500,7 +1500,7 @@ class FleetsApi
      */
     public function getFleetsFleetIdAsyncWithHttpInfo($fleetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk';
         $request = $this->getFleetsFleetIdRequest($fleetId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1674,9 +1674,9 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]
      */
     public function getFleetsFleetIdMembers($fleetId, $datasource = 'tranquility', $language = 'en-us', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1696,13 +1696,13 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFleetsFleetIdMembersWithHttpInfo($fleetId, $datasource = 'tranquility', $language = 'en-us', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]';
         $request = $this->getFleetsFleetIdMembersRequest($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1754,7 +1754,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1762,7 +1762,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1770,7 +1770,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembersNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembersNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1778,7 +1778,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1830,7 +1830,7 @@ class FleetsApi
      */
     public function getFleetsFleetIdMembersAsyncWithHttpInfo($fleetId, $datasource = 'tranquility', $language = 'en-us', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]';
         $request = $this->getFleetsFleetIdMembersRequest($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -2009,9 +2009,9 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]
      */
     public function getFleetsFleetIdWings($fleetId, $datasource = 'tranquility', $language = 'en-us', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -2031,13 +2031,13 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFleetsFleetIdWingsWithHttpInfo($fleetId, $datasource = 'tranquility', $language = 'en-us', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]';
         $request = $this->getFleetsFleetIdWingsRequest($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent);
 
         try {
@@ -2089,7 +2089,7 @@ class FleetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2097,7 +2097,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2105,7 +2105,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2113,7 +2113,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2165,7 +2165,7 @@ class FleetsApi
      */
     public function getFleetsFleetIdWingsAsyncWithHttpInfo($fleetId, $datasource = 'tranquility', $language = 'en-us', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]';
         $request = $this->getFleetsFleetIdWingsRequest($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -2338,13 +2338,13 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2359,13 +2359,13 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2409,7 +2409,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2417,7 +2417,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2425,7 +2425,7 @@ class FleetsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2433,7 +2433,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2449,7 +2449,7 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -2474,7 +2474,7 @@ class FleetsApi
      * Create fleet invitation
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -2515,7 +2515,7 @@ class FleetsApi
      * Create request for operation 'postFleetsFleetIdMembers'
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation $invitation Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -2654,9 +2654,9 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated
      */
     public function postFleetsFleetIdWings($fleetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -2675,13 +2675,13 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated, HTTP status code, HTTP response headers (array of strings)
      */
     public function postFleetsFleetIdWingsWithHttpInfo($fleetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated';
         $request = $this->postFleetsFleetIdWingsRequest($fleetId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -2733,7 +2733,7 @@ class FleetsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2741,7 +2741,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2749,7 +2749,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2757,7 +2757,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2807,7 +2807,7 @@ class FleetsApi
      */
     public function postFleetsFleetIdWingsAsyncWithHttpInfo($fleetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated';
         $request = $this->postFleetsFleetIdWingsRequest($fleetId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -2981,9 +2981,9 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated
      */
     public function postFleetsFleetIdWingsWingIdSquads($fleetId, $wingId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -3003,13 +3003,13 @@ class FleetsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated, HTTP status code, HTTP response headers (array of strings)
      */
     public function postFleetsFleetIdWingsWingIdSquadsWithHttpInfo($fleetId, $wingId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated';
         $request = $this->postFleetsFleetIdWingsWingIdSquadsRequest($fleetId, $wingId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -3061,7 +3061,7 @@ class FleetsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3069,7 +3069,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3077,7 +3077,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3085,7 +3085,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3137,7 +3137,7 @@ class FleetsApi
      */
     public function postFleetsFleetIdWingsWingIdSquadsAsyncWithHttpInfo($fleetId, $wingId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated';
         $request = $this->postFleetsFleetIdWingsWingIdSquadsRequest($fleetId, $wingId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -3320,13 +3320,13 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3341,13 +3341,13 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3391,7 +3391,7 @@ class FleetsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdBadRequest',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdBadRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3399,7 +3399,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3407,7 +3407,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3415,7 +3415,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3431,7 +3431,7 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -3456,7 +3456,7 @@ class FleetsApi
      * Update fleet
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -3497,7 +3497,7 @@ class FleetsApi
      * Create request for operation 'putFleetsFleetId'
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings $newSettings What to update for this fleet (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -3632,13 +3632,13 @@ class FleetsApi
      *
      * @param  int $fleetId ID for a fleet (required)
      * @param  int $memberId The character ID of a member in this fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3654,13 +3654,13 @@ class FleetsApi
      *
      * @param  int $fleetId ID for a fleet (required)
      * @param  int $memberId The character ID of a member in this fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3704,7 +3704,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3712,7 +3712,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3720,7 +3720,7 @@ class FleetsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3728,7 +3728,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3745,7 +3745,7 @@ class FleetsApi
      *
      * @param  int $fleetId ID for a fleet (required)
      * @param  int $memberId The character ID of a member in this fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -3771,7 +3771,7 @@ class FleetsApi
      *
      * @param  int $fleetId ID for a fleet (required)
      * @param  int $memberId The character ID of a member in this fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -3813,7 +3813,7 @@ class FleetsApi
      *
      * @param  int $fleetId ID for a fleet (required)
      * @param  int $memberId The character ID of a member in this fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement $movement Details of the invitation (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -3961,14 +3961,14 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squadId The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3983,14 +3983,14 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squadId The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4034,7 +4034,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4042,7 +4042,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4050,7 +4050,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4066,7 +4066,7 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squadId The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4092,7 +4092,7 @@ class FleetsApi
      * Rename fleet squad
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squadId The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4134,7 +4134,7 @@ class FleetsApi
      * Create request for operation 'putFleetsFleetIdSquadsSquadId'
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming $naming New name of the squad (required)
      * @param  int $squadId The squad to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4283,14 +4283,14 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wingId The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4305,14 +4305,14 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wingId The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4356,7 +4356,7 @@ class FleetsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4364,7 +4364,7 @@ class FleetsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4372,7 +4372,7 @@ class FleetsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4388,7 +4388,7 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wingId The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4414,7 +4414,7 @@ class FleetsApi
      * Rename fleet wing
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wingId The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -4456,7 +4456,7 @@ class FleetsApi
      * Create request for operation 'putFleetsFleetIdWingsWingId'
      *
      * @param  int $fleetId ID for a fleet (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming $naming New name of the wing (required)
      * @param  int $wingId The wing to rename (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)

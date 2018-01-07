@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * PostUniverseIdsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'agents' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsAgent[]',
-        'alliances' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsAlliance[]',
-        'characters' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsCharacter[]',
-        'constellations' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsConstellation[]',
-        'corporations' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsCorporation[]',
-        'factions' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsFaction[]',
-        'inventoryTypes' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsInventoryType[]',
-        'regions' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsRegion[]',
-        'systems' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsSystem[]',
-        'stations' => '\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsStation[]'
+        'agents' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsAgent[]',
+        'alliances' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsAlliance[]',
+        'characters' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsCharacter[]',
+        'constellations' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsConstellation[]',
+        'corporations' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsCorporation[]',
+        'factions' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsFaction[]',
+        'inventoryTypes' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsInventoryType[]',
+        'regions' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsRegion[]',
+        'systems' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsSystem[]',
+        'stations' => '\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsStation[]'
     ];
 
     /**
@@ -263,7 +263,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets agents
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsAgent[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsAgent[]
      */
     public function getAgents()
     {
@@ -273,7 +273,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets agents
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsAgent[] $agents agents array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsAgent[] $agents agents array
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets alliances
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsAlliance[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsAlliance[]
      */
     public function getAlliances()
     {
@@ -297,7 +297,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets alliances
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsAlliance[] $alliances alliances array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsAlliance[] $alliances alliances array
      *
      * @return $this
      */
@@ -311,7 +311,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets characters
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsCharacter[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsCharacter[]
      */
     public function getCharacters()
     {
@@ -321,7 +321,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets characters
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsCharacter[] $characters characters array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsCharacter[] $characters characters array
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets constellations
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsConstellation[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsConstellation[]
      */
     public function getConstellations()
     {
@@ -345,7 +345,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets constellations
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsConstellation[] $constellations constellations array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsConstellation[] $constellations constellations array
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets corporations
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsCorporation[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsCorporation[]
      */
     public function getCorporations()
     {
@@ -369,7 +369,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets corporations
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsCorporation[] $corporations corporations array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsCorporation[] $corporations corporations array
      *
      * @return $this
      */
@@ -383,7 +383,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets factions
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsFaction[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsFaction[]
      */
     public function getFactions()
     {
@@ -393,7 +393,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets factions
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsFaction[] $factions factions array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsFaction[] $factions factions array
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets inventoryTypes
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsInventoryType[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsInventoryType[]
      */
     public function getInventoryTypes()
     {
@@ -417,7 +417,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets inventoryTypes
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsInventoryType[] $inventoryTypes inventory_types array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsInventoryType[] $inventoryTypes inventory_types array
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets regions
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsRegion[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsRegion[]
      */
     public function getRegions()
     {
@@ -441,7 +441,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets regions
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsRegion[] $regions regions array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsRegion[] $regions regions array
      *
      * @return $this
      */
@@ -455,7 +455,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets systems
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsSystem[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsSystem[]
      */
     public function getSystems()
     {
@@ -465,7 +465,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets systems
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsSystem[] $systems systems array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsSystem[] $systems systems array
      *
      * @return $this
      */
@@ -479,7 +479,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Gets stations
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsStation[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsStation[]
      */
     public function getStations()
     {
@@ -489,7 +489,7 @@ class PostUniverseIdsOk implements ModelInterface, ArrayAccess
     /**
      * Sets stations
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsStation[] $stations stations array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsStation[] $stations stations array
      *
      * @return $this
      */

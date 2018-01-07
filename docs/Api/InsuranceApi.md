@@ -1,4 +1,4 @@
-# nullx27ESI\InsuranceApi
+# nullx27\ESI\InsuranceApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getInsurancePrices**
-> \nullx27ESI\nullx27\ESI\Models\GetInsurancePrices200Ok[] getInsurancePrices($datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetInsurancePrices200Ok[] getInsurancePrices($datasource, $language, $userAgent, $xUserAgent)
 
 List insurance levels
 
@@ -19,7 +19,7 @@ Return available insurance levels for all ship types  --- Alternate route: `/dev
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\InsuranceApi(
+$apiInstance = new nullx27\ESI\Api\InsuranceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetInsurancePrices200Ok[]**](../Model/GetInsurancePrices200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetInsurancePrices200Ok[]**](../Model/GetInsurancePrices200Ok.md)
 
 ### Authorization
 

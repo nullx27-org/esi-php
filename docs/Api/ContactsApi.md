@@ -1,4 +1,4 @@
-# nullx27ESI\ContactsApi
+# nullx27\ESI\ContactsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -26,9 +26,9 @@ Bulk delete contacts  --- Alternate route: `/dev/characters/{character_id}/conta
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -76,7 +76,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdContacts**
-> \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[] getAlliancesAllianceIdContacts($allianceId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[] getAlliancesAllianceIdContacts($allianceId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Get alliance contacts
 
@@ -88,9 +88,9 @@ Return contacts of an alliance  --- Alternate route: `/dev/alliances/{alliance_i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]**](../Model/GetAlliancesAllianceIdContacts200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]**](../Model/GetAlliancesAllianceIdContacts200Ok.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdContacts**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[] getCharactersCharacterIdContacts($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[] getCharactersCharacterIdContacts($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Get contacts
 
@@ -151,9 +151,9 @@ Return contacts of a character  --- Alternate route: `/dev/characters/{character
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]**](../Model/GetCharactersCharacterIdContacts200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]**](../Model/GetCharactersCharacterIdContacts200Ok.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdContactsLabels**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[] getCharactersCharacterIdContactsLabels($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[] getCharactersCharacterIdContactsLabels($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get contact labels
 
@@ -214,9 +214,9 @@ Return custom labels for contacts the character defined  --- Alternate route: `/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]**](../Model/GetCharactersCharacterIdContactsLabels200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]**](../Model/GetCharactersCharacterIdContactsLabels200Ok.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdContacts**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[] getCorporationsCorporationIdContacts($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[] getCorporationsCorporationIdContacts($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Get corporation contacts
 
@@ -275,9 +275,9 @@ Return contacts of a corporation  --- Alternate route: `/dev/corporations/{corpo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]**](../Model/GetCorporationsCorporationIdContacts200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]**](../Model/GetCorporationsCorporationIdContacts200Ok.md)
 
 ### Authorization
 
@@ -338,16 +338,16 @@ Bulk add contacts with same settings  --- Alternate route: `/dev/characters/{cha
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $characterId = 56; // int | An EVE character ID
-$contactIds = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | A list of contacts to add
+$contactIds = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | A list of contacts to add
 $standing = 3.4; // float | Standing for the new contact
 $datasource = "tranquility"; // string | The server name you would like data from
 $labelId = 0; // int | Add a custom label to the new contact
@@ -407,16 +407,16 @@ Bulk edit contacts with same settings  --- Alternate route: `/dev/characters/{ch
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ContactsApi(
+$apiInstance = new nullx27\ESI\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $characterId = 56; // int | An EVE character ID
-$contactIds = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | A list of contacts to edit
+$contactIds = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | A list of contacts to edit
 $standing = 3.4; // float | Standing for the contact
 $datasource = "tranquility"; // string | The server name you would like data from
 $labelId = 0; // int | Add a custom label to the contact, use 0 for clearing label

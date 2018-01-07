@@ -1,4 +1,4 @@
-# nullx27ESI\WarsApi
+# nullx27\ESI\WarsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -21,7 +21,7 @@ Return a list of wars  --- Alternate route: `/dev/wars/`  Alternate route: `/leg
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\WarsApi(
+$apiInstance = new nullx27\ESI\Api\WarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarId**
-> \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk getWarsWarId($warId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk getWarsWarId($warId, $datasource, $userAgent, $xUserAgent)
 
 Get war information
 
@@ -76,7 +76,7 @@ Return details about a war  --- Alternate route: `/dev/wars/{war_id}/`  Alternat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\WarsApi(
+$apiInstance = new nullx27\ESI\Api\WarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk**](../Model/GetWarsWarIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk**](../Model/GetWarsWarIdOk.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarIdKillmails**
-> \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($warId, $datasource, $page, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($warId, $datasource, $page, $userAgent, $xUserAgent)
 
 List kills for a war
 
@@ -131,7 +131,7 @@ Return a list of kills related to a war  --- Alternate route: `/dev/wars/{war_id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\WarsApi(
+$apiInstance = new nullx27\ESI\Api\WarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]**](../Model/GetWarsWarIdKillmails200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]**](../Model/GetWarsWarIdKillmails200Ok.md)
 
 ### Authorization
 

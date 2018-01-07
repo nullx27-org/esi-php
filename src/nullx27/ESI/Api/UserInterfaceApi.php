@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * UserInterfaceApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -117,7 +117,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -169,7 +169,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -400,7 +400,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -420,7 +420,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -464,7 +464,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -472,7 +472,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -677,7 +677,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -697,7 +697,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -741,7 +741,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -749,7 +749,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -954,7 +954,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -974,7 +974,7 @@ class UserInterfaceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1018,7 +1018,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1026,7 +1026,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1225,13 +1225,13 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1245,13 +1245,13 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1295,7 +1295,7 @@ class UserInterfaceApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1303,7 +1303,7 @@ class UserInterfaceApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1311,7 +1311,7 @@ class UserInterfaceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1326,7 +1326,7 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -1350,7 +1350,7 @@ class UserInterfaceApi
      *
      * Open New Mail Window
      *
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -1390,7 +1390,7 @@ class UserInterfaceApi
     /**
      * Create request for operation 'postUiOpenwindowNewmail'
      *
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostUiOpenwindowNewmailNewMail $newMail The details of mail to create (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)

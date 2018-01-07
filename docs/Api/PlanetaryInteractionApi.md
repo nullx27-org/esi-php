@@ -1,4 +1,4 @@
-# nullx27ESI\PlanetaryInteractionApi
+# nullx27\ESI\PlanetaryInteractionApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdPlanets**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[] getCharactersCharacterIdPlanets($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[] getCharactersCharacterIdPlanets($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get colonies
 
@@ -23,9 +23,9 @@ Returns a list of all planetary colonies owned by a character.  --- Alternate ro
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\PlanetaryInteractionApi(
+$apiInstance = new nullx27\ESI\Api\PlanetaryInteractionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]**](../Model/GetCharactersCharacterIdPlanets200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]**](../Model/GetCharactersCharacterIdPlanets200Ok.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdPlanetsPlanetId**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk getCharactersCharacterIdPlanetsPlanetId($characterId, $planetId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk getCharactersCharacterIdPlanetsPlanetId($characterId, $planetId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get colony layout
 
@@ -84,9 +84,9 @@ Returns full details on the layout of a single planetary colony, including links
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\PlanetaryInteractionApi(
+$apiInstance = new nullx27\ESI\Api\PlanetaryInteractionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk**](../Model/GetCharactersCharacterIdPlanetsPlanetIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk**](../Model/GetCharactersCharacterIdPlanetsPlanetIdOk.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdCustomsOffices**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[] getCorporationsCorporationIdCustomsOffices($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[] getCorporationsCorporationIdCustomsOffices($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List corporation customs offices
 
@@ -147,9 +147,9 @@ List customs offices owned by a corporation  --- Alternate route: `/dev/corporat
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\PlanetaryInteractionApi(
+$apiInstance = new nullx27\ESI\Api\PlanetaryInteractionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]**](../Model/GetCorporationsCorporationIdCustomsOffices200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]**](../Model/GetCorporationsCorporationIdCustomsOffices200Ok.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSchematicsSchematicId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk getUniverseSchematicsSchematicId($schematicId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk getUniverseSchematicsSchematicId($schematicId, $datasource, $userAgent, $xUserAgent)
 
 Get schematic information
 
@@ -209,7 +209,7 @@ Get information on a planetary factory schematic  --- Alternate route: `/dev/uni
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\PlanetaryInteractionApi(
+$apiInstance = new nullx27\ESI\Api\PlanetaryInteractionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk**](../Model/GetUniverseSchematicsSchematicIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk**](../Model/GetUniverseSchematicsSchematicIdOk.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# nullx27ESI\LoyaltyApi
+# nullx27\ESI\LoyaltyApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdLoyaltyPoints**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdLoyaltyPoints200Ok[] getCharactersCharacterIdLoyaltyPoints($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdLoyaltyPoints200Ok[] getCharactersCharacterIdLoyaltyPoints($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get loyalty points
 
@@ -21,9 +21,9 @@ Return a list of loyalty points for all corporations the character has worked fo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\LoyaltyApi(
+$apiInstance = new nullx27\ESI\Api\LoyaltyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdLoyaltyPoints200Ok[]**](../Model/GetCharactersCharacterIdLoyaltyPoints200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdLoyaltyPoints200Ok[]**](../Model/GetCharactersCharacterIdLoyaltyPoints200Ok.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLoyaltyStoresCorporationIdOffers**
-> \nullx27ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffers200Ok[] getLoyaltyStoresCorporationIdOffers($corporationId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffers200Ok[] getLoyaltyStoresCorporationIdOffers($corporationId, $datasource, $userAgent, $xUserAgent)
 
 List loyalty store offers
 
@@ -81,7 +81,7 @@ Return a list of offers from a specific corporation's loyalty store  --- Alterna
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\LoyaltyApi(
+$apiInstance = new nullx27\ESI\Api\LoyaltyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffers200Ok[]**](../Model/GetLoyaltyStoresCorporationIdOffers200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffers200Ok[]**](../Model/GetLoyaltyStoresCorporationIdOffers200Ok.md)
 
 ### Authorization
 

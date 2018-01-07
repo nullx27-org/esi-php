@@ -1,4 +1,4 @@
-# nullx27ESI\WalletApi
+# nullx27\ESI\WalletApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -25,9 +25,9 @@ Returns a character's wallet balance  --- Alternate route: `/dev/characters/{cha
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\WalletApi(
+$apiInstance = new nullx27\ESI\Api\WalletApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdWalletJournal**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletJournal200Ok[] getCharactersCharacterIdWalletJournal($characterId, $datasource, $fromId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletJournal200Ok[] getCharactersCharacterIdWalletJournal($characterId, $datasource, $fromId, $token, $userAgent, $xUserAgent)
 
 Get character wallet journal
 
@@ -86,9 +86,9 @@ Retrieve character wallet journal  --- Alternate route: `/dev/characters/{charac
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\WalletApi(
+$apiInstance = new nullx27\ESI\Api\WalletApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletJournal200Ok[]**](../Model/GetCharactersCharacterIdWalletJournal200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletJournal200Ok[]**](../Model/GetCharactersCharacterIdWalletJournal200Ok.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdWalletTransactions**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletTransactions200Ok[] getCharactersCharacterIdWalletTransactions($characterId, $datasource, $fromId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletTransactions200Ok[] getCharactersCharacterIdWalletTransactions($characterId, $datasource, $fromId, $token, $userAgent, $xUserAgent)
 
 Get wallet transactions
 
@@ -149,9 +149,9 @@ Get wallet transactions of a character  --- Alternate route: `/dev/characters/{c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\WalletApi(
+$apiInstance = new nullx27\ESI\Api\WalletApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletTransactions200Ok[]**](../Model/GetCharactersCharacterIdWalletTransactions200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdWalletTransactions200Ok[]**](../Model/GetCharactersCharacterIdWalletTransactions200Ok.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdWallets**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWallets200Ok[] getCorporationsCorporationIdWallets($corporationId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWallets200Ok[] getCorporationsCorporationIdWallets($corporationId, $datasource, $token, $userAgent, $xUserAgent)
 
 Returns a corporation's wallet balance
 
@@ -212,9 +212,9 @@ Get a corporation's wallets  --- Alternate route: `/dev/corporations/{corporatio
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\WalletApi(
+$apiInstance = new nullx27\ESI\Api\WalletApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWallets200Ok[]**](../Model/GetCorporationsCorporationIdWallets200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWallets200Ok[]**](../Model/GetCorporationsCorporationIdWallets200Ok.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdWalletsDivisionJournal**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[] getCorporationsCorporationIdWalletsDivisionJournal($corporationId, $division, $datasource, $fromId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[] getCorporationsCorporationIdWalletsDivisionJournal($corporationId, $division, $datasource, $fromId, $token, $userAgent, $xUserAgent)
 
 Get corporation wallet journal
 
@@ -273,9 +273,9 @@ Retrieve corporation wallet journal  --- Alternate route: `/dev/corporations/{co
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\WalletApi(
+$apiInstance = new nullx27\ESI\Api\WalletApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]**](../Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionJournal200Ok[]**](../Model/GetCorporationsCorporationIdWalletsDivisionJournal200Ok.md)
 
 ### Authorization
 
@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdWalletsDivisionTransactions**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[] getCorporationsCorporationIdWalletsDivisionTransactions($corporationId, $division, $datasource, $fromId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[] getCorporationsCorporationIdWalletsDivisionTransactions($corporationId, $division, $datasource, $fromId, $token, $userAgent, $xUserAgent)
 
 Get corporation wallet transactions
 
@@ -338,9 +338,9 @@ Get wallet transactions of a corporation  --- Alternate route: `/dev/corporation
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\WalletApi(
+$apiInstance = new nullx27\ESI\Api\WalletApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -377,7 +377,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]**](../Model/GetCorporationsCorporationIdWalletsDivisionTransactions200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdWalletsDivisionTransactions200Ok[]**](../Model/GetCorporationsCorporationIdWalletsDivisionTransactions200Ok.md)
 
 ### Authorization
 

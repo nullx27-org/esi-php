@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **dischargeAttributeId** | **int** | discharge_attribute_id integer | [optional] 
 **rangeAttributeId** | **int** | range_attribute_id integer | [optional] 
 **falloffAttributeId** | **int** | falloff_attribute_id integer | [optional] 
-**modifiers** | [**\nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[]**](GetDogmaEffectsEffectIdModifier.md) | modifiers array | [optional] 
+**modifiers** | [**\nullx27\ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[]**](GetDogmaEffectsEffectIdModifier.md) | modifiers array | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

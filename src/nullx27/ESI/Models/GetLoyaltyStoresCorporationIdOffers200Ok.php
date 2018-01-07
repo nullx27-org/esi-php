@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetLoyaltyStoresCorporationIdOffers200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GetLoyaltyStoresCorporationIdOffers200Ok implements ModelInterface, ArrayA
         'quantity' => 'int',
         'lpCost' => 'int',
         'iskCost' => 'float',
-        'requiredItems' => '\nullx27ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffersRequiredItem[]'
+        'requiredItems' => '\nullx27\ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffersRequiredItem[]'
     ];
 
     /**
@@ -395,7 +395,7 @@ class GetLoyaltyStoresCorporationIdOffers200Ok implements ModelInterface, ArrayA
     /**
      * Gets requiredItems
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffersRequiredItem[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffersRequiredItem[]
      */
     public function getRequiredItems()
     {
@@ -405,7 +405,7 @@ class GetLoyaltyStoresCorporationIdOffers200Ok implements ModelInterface, ArrayA
     /**
      * Sets requiredItems
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffersRequiredItem[] $requiredItems required_items array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetLoyaltyStoresCorporationIdOffersRequiredItem[] $requiredItems required_items array
      *
      * @return $this
      */

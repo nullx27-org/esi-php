@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * SearchApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class SearchApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk
      */
     public function getCharactersCharacterIdSearch($categories, $characterId, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -122,13 +122,13 @@ class SearchApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdSearchWithHttpInfo($categories, $characterId, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk';
         $request = $this->getCharactersCharacterIdSearchRequest($categories, $characterId, $search, $datasource, $language, $strict, $token, $userAgent, $xUserAgent);
 
         try {
@@ -180,7 +180,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class SearchApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class SearchApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class SearchApi
      */
     public function getCharactersCharacterIdSearchAsyncWithHttpInfo($categories, $characterId, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk';
         $request = $this->getCharactersCharacterIdSearchRequest($categories, $characterId, $search, $datasource, $language, $strict, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -479,9 +479,9 @@ class SearchApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetSearchOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetSearchOk
      */
     public function getSearch($categories, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $userAgent = null, $xUserAgent = null)
     {
@@ -502,13 +502,13 @@ class SearchApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetSearchOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetSearchOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSearchWithHttpInfo($categories, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetSearchOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetSearchOk';
         $request = $this->getSearchRequest($categories, $search, $datasource, $language, $strict, $userAgent, $xUserAgent);
 
         try {
@@ -560,7 +560,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetSearchOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetSearchOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class SearchApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -622,7 +622,7 @@ class SearchApi
      */
     public function getSearchAsyncWithHttpInfo($categories, $search, $datasource = 'tranquility', $language = 'en-us', $strict = 'false', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetSearchOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetSearchOk';
         $request = $this->getSearchRequest($categories, $search, $datasource, $language, $strict, $userAgent, $xUserAgent);
 
         return $this->client

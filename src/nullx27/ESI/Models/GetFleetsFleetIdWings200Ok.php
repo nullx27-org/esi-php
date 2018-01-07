@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetFleetsFleetIdWings200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'id' => 'int',
-        'squads' => '\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsSquad[]'
+        'squads' => '\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsSquad[]'
     ];
 
     /**
@@ -287,7 +287,7 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets squads
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsSquad[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsSquad[]
      */
     public function getSquads()
     {
@@ -297,7 +297,7 @@ class GetFleetsFleetIdWings200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets squads
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsSquad[] $squads squads array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWingsSquad[] $squads squads array
      *
      * @return $this
      */

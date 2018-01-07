@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetUniversePlanetsPlanetIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class GetUniversePlanetsPlanetIdOk implements ModelInterface, ArrayAccess
         'planetId' => 'int',
         'name' => 'string',
         'typeId' => 'int',
-        'position' => '\nullx27ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdPosition',
+        'position' => '\nullx27\ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdPosition',
         'systemId' => 'int'
     ];
 
@@ -335,7 +335,7 @@ class GetUniversePlanetsPlanetIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdPosition
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdPosition
      */
     public function getPosition()
     {
@@ -345,7 +345,7 @@ class GetUniversePlanetsPlanetIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdPosition $position position
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdPosition $position position
      *
      * @return $this
      */

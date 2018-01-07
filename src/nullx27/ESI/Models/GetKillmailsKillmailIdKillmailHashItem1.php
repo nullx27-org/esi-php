@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetKillmailsKillmailIdKillmailHashItem1 Class Doc Comment
  *
  * @category Class
  * @description item object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GetKillmailsKillmailIdKillmailHashItem1 implements ModelInterface, ArrayAc
         'quantityDropped' => 'int',
         'singleton' => 'int',
         'flag' => 'int',
-        'items' => '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashItem[]'
+        'items' => '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashItem[]'
     ];
 
     /**
@@ -377,7 +377,7 @@ class GetKillmailsKillmailIdKillmailHashItem1 implements ModelInterface, ArrayAc
     /**
      * Gets items
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashItem[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashItem[]
      */
     public function getItems()
     {
@@ -387,7 +387,7 @@ class GetKillmailsKillmailIdKillmailHashItem1 implements ModelInterface, ArrayAc
     /**
      * Sets items
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashItem[] $items items array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashItem[] $items items array
      *
      * @return $this
      */

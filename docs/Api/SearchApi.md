@@ -1,4 +1,4 @@
-# nullx27ESI\SearchApi
+# nullx27\ESI\SearchApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdSearch**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk getCharactersCharacterIdSearch($categories, $characterId, $search, $datasource, $language, $strict, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk getCharactersCharacterIdSearch($categories, $characterId, $search, $datasource, $language, $strict, $token, $userAgent, $xUserAgent)
 
 Search on a string
 
@@ -21,9 +21,9 @@ Search for entities that match a given sub-string.  --- Alternate route: `/dev/c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\SearchApi(
+$apiInstance = new nullx27\ESI\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk**](../Model/GetCharactersCharacterIdSearchOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSearchOk**](../Model/GetCharactersCharacterIdSearchOk.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSearch**
-> \nullx27ESI\nullx27\ESI\Models\GetSearchOk getSearch($categories, $search, $datasource, $language, $strict, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetSearchOk getSearch($categories, $search, $datasource, $language, $strict, $userAgent, $xUserAgent)
 
 Search on a string
 
@@ -89,7 +89,7 @@ Search for entities that match a given sub-string.  --- Alternate route: `/dev/s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\SearchApi(
+$apiInstance = new nullx27\ESI\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetSearchOk**](../Model/GetSearchOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetSearchOk**](../Model/GetSearchOk.md)
 
 ### Authorization
 

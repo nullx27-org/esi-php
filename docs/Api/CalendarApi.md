@@ -1,4 +1,4 @@
-# nullx27ESI\CalendarApi
+# nullx27\ESI\CalendarApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdCalendar**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[] getCharactersCharacterIdCalendar($characterId, $datasource, $fromEvent, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[] getCharactersCharacterIdCalendar($characterId, $datasource, $fromEvent, $token, $userAgent, $xUserAgent)
 
 List calendar event summaries
 
@@ -23,9 +23,9 @@ Get 50 event summaries from the calendar. If no from_event ID is given, the reso
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\CalendarApi(
+$apiInstance = new nullx27\ESI\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]**](../Model/GetCharactersCharacterIdCalendar200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]**](../Model/GetCharactersCharacterIdCalendar200Ok.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdCalendarEventId**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk getCharactersCharacterIdCalendarEventId($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk getCharactersCharacterIdCalendarEventId($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get an event
 
@@ -86,9 +86,9 @@ Get all the information for a specific event  --- Alternate route: `/dev/charact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\CalendarApi(
+$apiInstance = new nullx27\ESI\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk**](../Model/GetCharactersCharacterIdCalendarEventIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk**](../Model/GetCharactersCharacterIdCalendarEventIdOk.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdCalendarEventIdAttendees**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[] getCharactersCharacterIdCalendarEventIdAttendees($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[] getCharactersCharacterIdCalendarEventIdAttendees($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get attendees
 
@@ -149,9 +149,9 @@ Get all invited attendees for a given event  --- Alternate route: `/dev/characte
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\CalendarApi(
+$apiInstance = new nullx27\ESI\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]**](../Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]**](../Model/GetCharactersCharacterIdCalendarEventIdAttendees200Ok.md)
 
 ### Authorization
 
@@ -212,9 +212,9 @@ Set your response status to an event  --- Alternate route: `/dev/characters/{cha
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\CalendarApi(
+$apiInstance = new nullx27\ESI\Api\CalendarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -222,7 +222,7 @@ $apiInstance = new nullx27ESI\Api\CalendarApi(
 );
 $characterId = 56; // int | An EVE character ID
 $eventId = 56; // int | The ID of the event requested
-$response = new \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse(); // \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
+$response = new \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse(); // \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **eventId** | **int**| The ID of the event requested |
- **response** | [**\nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)| The response value to set, overriding current value. |
+ **response** | [**\nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse**](../Model/PutCharactersCharacterIdCalendarEventIdResponse.md)| The response value to set, overriding current value. |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]

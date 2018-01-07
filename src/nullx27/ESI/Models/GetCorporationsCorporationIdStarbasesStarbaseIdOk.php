@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdStarbasesStarbaseIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -71,7 +71,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
         'attackSecurityStatusThreshold' => 'float',
         'attackIfOtherSecurityStatusDropping' => 'bool',
         'attackIfAtWar' => 'bool',
-        'fuels' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]'
+        'fuels' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]'
     ];
 
     /**
@@ -905,7 +905,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
     /**
      * Gets fuels
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[]
      */
     public function getFuels()
     {
@@ -915,7 +915,7 @@ class GetCorporationsCorporationIdStarbasesStarbaseIdOk implements ModelInterfac
     /**
      * Sets fuels
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[] $fuels Fuel blocks and other things that will be consumed when operating a starbase (POS)
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStarbasesStarbaseIdFuel[] $fuels Fuel blocks and other things that will be consumed when operating a starbase (POS)
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsCorporationsKills Class Doc Comment
  *
  * @category Class
  * @description Top 10 rankings of corporations by number of kills from yesterday, last week and in total.
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'yesterday' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday[]',
-        'lastWeek' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek[]',
-        'activeTotal' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal[]'
+        'yesterday' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday[]',
+        'lastWeek' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek[]',
+        'activeTotal' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Gets yesterday
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday[]
      */
     public function getYesterday()
     {
@@ -249,7 +249,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Sets yesterday
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday[] $yesterday Top 10 ranking of corporations by kills in the past day
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsYesterday[] $yesterday Top 10 ranking of corporations by kills in the past day
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Gets lastWeek
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek[]
      */
     public function getLastWeek()
     {
@@ -273,7 +273,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Sets lastWeek
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek[] $lastWeek Top 10 ranking of corporations by kills in the past week
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsLastWeek[] $lastWeek Top 10 ranking of corporations by kills in the past week
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Gets activeTotal
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal[]
      */
     public function getActiveTotal()
     {
@@ -297,7 +297,7 @@ class GetFwLeaderboardsCorporationsKills implements ModelInterface, ArrayAccess
     /**
      * Sets activeTotal
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal[] $activeTotal Top 10 ranking of corporations active in faction warfare by total kills. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days.
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsActiveTotal[] $activeTotal Top 10 ranking of corporations active in faction warfare by total kills. A corporation is considered \"active\" if they have participated in faction warfare in the past 14 days.
      *
      * @return $this
      */

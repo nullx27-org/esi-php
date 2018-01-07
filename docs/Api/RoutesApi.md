@@ -1,4 +1,4 @@
-# nullx27ESI\RoutesApi
+# nullx27\ESI\RoutesApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -19,7 +19,7 @@ Get the systems between origin and destination  --- Alternate route: `/dev/route
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\RoutesApi(
+$apiInstance = new nullx27\ESI\Api\RoutesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -27,7 +27,7 @@ $apiInstance = new nullx27ESI\Api\RoutesApi(
 $destination = 56; // int | destination solar system ID
 $origin = 56; // int | origin solar system ID
 $avoid = array(56); // int[] | avoid solar system ID(s)
-$connections = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[][] | connected solar system pairs
+$connections = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[][] | connected solar system pairs
 $datasource = "tranquility"; // string | The server name you would like data from
 $flag = "shortest"; // string | route security preference
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdOutpostsOutpostIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,8 +66,8 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
         'reprocessingEfficiency' => 'float',
         'reprocessingStationTake' => 'float',
         'standingOwnerId' => 'int',
-        'coordinates' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates',
-        'services' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdService[]'
+        'coordinates' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates',
+        'services' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdService[]'
     ];
 
     /**
@@ -515,7 +515,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Gets coordinates
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates
      */
     public function getCoordinates()
     {
@@ -525,7 +525,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Sets coordinates
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates $coordinates coordinates
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdCoordinates $coordinates coordinates
      *
      * @return $this
      */
@@ -539,7 +539,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Gets services
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdService[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdService[]
      */
     public function getServices()
     {
@@ -549,7 +549,7 @@ class GetCorporationsCorporationIdOutpostsOutpostIdOk implements ModelInterface,
     /**
      * Sets services
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdService[] $services A list of services the given outpost provides
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOutpostsOutpostIdService[] $services A list of services the given outpost provides
      *
      * @return $this
      */

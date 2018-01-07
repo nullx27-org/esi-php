@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdStats200Ok Class Doc Comment
  *
  * @category Class
  * @description Aggregate stats for a year
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,18 +59,18 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'year' => 'int',
-        'character' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCharacter',
-        'combat' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCombat',
-        'industry' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIndustry',
-        'inventory' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsInventory',
-        'isk' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIsk',
-        'market' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMarket',
-        'mining' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMining',
-        'module' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsModule',
-        'orbital' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsOrbital',
-        'pve' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsPve',
-        'social' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsSocial',
-        'travel' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsTravel'
+        'character' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCharacter',
+        'combat' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCombat',
+        'industry' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIndustry',
+        'inventory' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsInventory',
+        'isk' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIsk',
+        'market' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMarket',
+        'mining' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMining',
+        'module' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsModule',
+        'orbital' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsOrbital',
+        'pve' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsPve',
+        'social' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsSocial',
+        'travel' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsTravel'
     ];
 
     /**
@@ -311,7 +311,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets character
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCharacter
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCharacter
      */
     public function getCharacter()
     {
@@ -321,7 +321,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets character
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCharacter $character character
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCharacter $character character
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets combat
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCombat
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCombat
      */
     public function getCombat()
     {
@@ -345,7 +345,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets combat
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCombat $combat combat
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsCombat $combat combat
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets industry
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIndustry
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIndustry
      */
     public function getIndustry()
     {
@@ -369,7 +369,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets industry
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIndustry $industry industry
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIndustry $industry industry
      *
      * @return $this
      */
@@ -383,7 +383,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets inventory
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsInventory
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsInventory
      */
     public function getInventory()
     {
@@ -393,7 +393,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets inventory
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsInventory $inventory inventory
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsInventory $inventory inventory
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets isk
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIsk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIsk
      */
     public function getIsk()
     {
@@ -417,7 +417,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets isk
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIsk $isk isk
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsIsk $isk isk
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets market
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMarket
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMarket
      */
     public function getMarket()
     {
@@ -441,7 +441,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets market
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMarket $market market
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMarket $market market
      *
      * @return $this
      */
@@ -455,7 +455,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets mining
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMining
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMining
      */
     public function getMining()
     {
@@ -465,7 +465,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets mining
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMining $mining mining
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsMining $mining mining
      *
      * @return $this
      */
@@ -479,7 +479,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets module
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsModule
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsModule
      */
     public function getModule()
     {
@@ -489,7 +489,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets module
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsModule $module module
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsModule $module module
      *
      * @return $this
      */
@@ -503,7 +503,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets orbital
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsOrbital
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsOrbital
      */
     public function getOrbital()
     {
@@ -513,7 +513,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets orbital
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsOrbital $orbital orbital
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsOrbital $orbital orbital
      *
      * @return $this
      */
@@ -527,7 +527,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets pve
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsPve
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsPve
      */
     public function getPve()
     {
@@ -537,7 +537,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets pve
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsPve $pve pve
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsPve $pve pve
      *
      * @return $this
      */
@@ -551,7 +551,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets social
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsSocial
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsSocial
      */
     public function getSocial()
     {
@@ -561,7 +561,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets social
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsSocial $social social
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsSocial $social social
      *
      * @return $this
      */
@@ -575,7 +575,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets travel
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsTravel
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsTravel
      */
     public function getTravel()
     {
@@ -585,7 +585,7 @@ class GetCharactersCharacterIdStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets travel
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsTravel $travel travel
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdStatsTravel $travel travel
      *
      * @return $this
      */

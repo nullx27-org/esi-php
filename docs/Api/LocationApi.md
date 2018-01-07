@@ -1,4 +1,4 @@
-# nullx27ESI\LocationApi
+# nullx27\ESI\LocationApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdLocation**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdLocationOk getCharactersCharacterIdLocation($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdLocationOk getCharactersCharacterIdLocation($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character location
 
@@ -22,9 +22,9 @@ Information about the characters current location. Returns the current solar sys
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\LocationApi(
+$apiInstance = new nullx27\ESI\Api\LocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdLocationOk**](../Model/GetCharactersCharacterIdLocationOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdLocationOk**](../Model/GetCharactersCharacterIdLocationOk.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdOnline**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOnlineOk getCharactersCharacterIdOnline($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOnlineOk getCharactersCharacterIdOnline($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character online
 
@@ -83,9 +83,9 @@ Checks if the character is currently online  --- Alternate route: `/dev/characte
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\LocationApi(
+$apiInstance = new nullx27\ESI\Api\LocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOnlineOk**](../Model/GetCharactersCharacterIdOnlineOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOnlineOk**](../Model/GetCharactersCharacterIdOnlineOk.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdShip**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdShipOk getCharactersCharacterIdShip($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdShipOk getCharactersCharacterIdShip($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get current ship
 
@@ -144,9 +144,9 @@ Get the current ship type, name and id  --- Alternate route: `/dev/characters/{c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\LocationApi(
+$apiInstance = new nullx27\ESI\Api\LocationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdShipOk**](../Model/GetCharactersCharacterIdShipOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdShipOk**](../Model/GetCharactersCharacterIdShipOk.md)
 
 ### Authorization
 

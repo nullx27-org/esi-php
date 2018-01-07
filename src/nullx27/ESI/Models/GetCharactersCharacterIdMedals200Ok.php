@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdMedals200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
         'date' => '\DateTime',
         'reason' => 'string',
         'status' => 'string',
-        'graphics' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMedalsGraphic[]'
+        'graphics' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMedalsGraphic[]'
     ];
 
     /**
@@ -539,7 +539,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets graphics
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMedalsGraphic[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMedalsGraphic[]
      */
     public function getGraphics()
     {
@@ -549,7 +549,7 @@ class GetCharactersCharacterIdMedals200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets graphics
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMedalsGraphic[] $graphics graphics array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMedalsGraphic[] $graphics graphics array
      *
      * @return $this
      */

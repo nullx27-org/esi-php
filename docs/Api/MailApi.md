@@ -1,4 +1,4 @@
-# nullx27ESI\MailApi
+# nullx27\ESI\MailApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -28,9 +28,9 @@ Delete a mail label  --- Alternate route: `/dev/characters/{character_id}/mail/l
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -90,9 +90,9 @@ Delete a mail  --- Alternate route: `/dev/characters/{character_id}/mail/{mail_i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -140,7 +140,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMail**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[] getCharactersCharacterIdMail($characterId, $datasource, $labels, $lastMailId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[] getCharactersCharacterIdMail($characterId, $datasource, $labels, $lastMailId, $token, $userAgent, $xUserAgent)
 
 Return mail headers
 
@@ -152,9 +152,9 @@ Return the 50 most recent mail headers belonging to the character that match the
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]**](../Model/GetCharactersCharacterIdMail200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]**](../Model/GetCharactersCharacterIdMail200Ok.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailLabels**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk getCharactersCharacterIdMailLabels($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk getCharactersCharacterIdMailLabels($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get mail labels and unread counts
 
@@ -217,9 +217,9 @@ Return a list of the users mail labels, unread counts for each label and a total
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk**](../Model/GetCharactersCharacterIdMailLabelsOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk**](../Model/GetCharactersCharacterIdMailLabelsOk.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailLists**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[] getCharactersCharacterIdMailLists($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[] getCharactersCharacterIdMailLists($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Return mailing list subscriptions
 
@@ -278,9 +278,9 @@ Return all mailing lists that the character is subscribed to  --- Alternate rout
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]**](../Model/GetCharactersCharacterIdMailLists200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]**](../Model/GetCharactersCharacterIdMailLists200Ok.md)
 
 ### Authorization
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdMailMailId**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent)
 
 Return a mail
 
@@ -339,9 +339,9 @@ Return the contents of an EVE mail  --- Alternate route: `/dev/characters/{chara
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -376,7 +376,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk**](../Model/GetCharactersCharacterIdMailMailIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk**](../Model/GetCharactersCharacterIdMailMailIdOk.md)
 
 ### Authorization
 
@@ -402,16 +402,16 @@ Create and send a new mail  --- Alternate route: `/dev/characters/{character_id}
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $characterId = 56; // int | An EVE character ID
-$mail = new \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail(); // \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail | The mail to send
+$mail = new \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail(); // \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail | The mail to send
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -431,7 +431,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
- **mail** | [**\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail**](../Model/PostCharactersCharacterIdMailMail.md)| The mail to send |
+ **mail** | [**\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail**](../Model/PostCharactersCharacterIdMailMail.md)| The mail to send |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
@@ -465,9 +465,9 @@ Create a mail label  --- Alternate route: `/dev/characters/{character_id}/mail/l
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -475,7 +475,7 @@ $apiInstance = new nullx27ESI\Api\MailApi(
 );
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
-$label = new \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel(); // \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel | Label to create
+$label = new \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel(); // \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel | Label to create
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
@@ -495,7 +495,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **label** | [**\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel**](../Model/PostCharactersCharacterIdMailLabelsLabel.md)| Label to create | [optional]
+ **label** | [**\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel**](../Model/PostCharactersCharacterIdMailLabelsLabel.md)| Label to create | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
  **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
@@ -528,16 +528,16 @@ Update metadata about a mail  --- Alternate route: `/dev/characters/{character_i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MailApi(
+$apiInstance = new nullx27\ESI\Api\MailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $characterId = 56; // int | An EVE character ID
-$contents = new \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents(); // \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
+$contents = new \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents(); // \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
 $mailId = 56; // int | An EVE mail ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
@@ -557,7 +557,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
- **contents** | [**\nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents**](../Model/PutCharactersCharacterIdMailMailIdContents.md)| Data used to update the mail |
+ **contents** | [**\nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents**](../Model/PutCharactersCharacterIdMailMailIdContents.md)| Data used to update the mail |
  **mailId** | **int**| An EVE mail ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]

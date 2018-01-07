@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetUniverseStationsStationIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess
         'owner' => 'int',
         'typeId' => 'int',
         'raceId' => 'int',
-        'position' => '\nullx27ESI\nullx27\ESI\Models\GetUniverseStationsStationIdPosition',
+        'position' => '\nullx27\ESI\nullx27\ESI\Models\GetUniverseStationsStationIdPosition',
         'systemId' => 'int',
         'reprocessingEfficiency' => 'float',
         'reprocessingStationsTake' => 'float',
@@ -520,7 +520,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniverseStationsStationIdPosition
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniverseStationsStationIdPosition
      */
     public function getPosition()
     {
@@ -530,7 +530,7 @@ class GetUniverseStationsStationIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetUniverseStationsStationIdPosition $position position
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetUniverseStationsStationIdPosition $position position
      *
      * @return $this
      */

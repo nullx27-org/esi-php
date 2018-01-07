@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**skills** | [**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillsSkill[]**](GetCharactersCharacterIdSkillsSkill.md) | skills array | 
+**skills** | [**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillsSkill[]**](GetCharactersCharacterIdSkillsSkill.md) | skills array | 
 **totalSp** | **int** | total_sp integer | 
 **unallocatedSp** | **int** | Skill points available to be assigned | [optional] 
 

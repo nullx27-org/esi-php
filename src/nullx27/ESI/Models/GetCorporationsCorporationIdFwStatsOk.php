@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdFwStatsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
         'factionId' => 'int',
         'enlistedOn' => '\DateTime',
         'pilots' => 'int',
-        'kills' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsKills',
-        'victoryPoints' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsVictoryPoints'
+        'kills' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsKills',
+        'victoryPoints' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsVictoryPoints'
     ];
 
     /**
@@ -317,7 +317,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Gets kills
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsKills
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsKills
      */
     public function getKills()
     {
@@ -327,7 +327,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Sets kills
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsKills $kills kills
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsKills $kills kills
      *
      * @return $this
      */
@@ -341,7 +341,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Gets victoryPoints
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsVictoryPoints
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -351,7 +351,7 @@ class GetCorporationsCorporationIdFwStatsOk implements ModelInterface, ArrayAcce
     /**
      * Sets victoryPoints
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsVictoryPoints $victoryPoints victoryPoints
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsVictoryPoints $victoryPoints victoryPoints
      *
      * @return $this
      */

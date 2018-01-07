@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * FactionWarfareApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk
      */
     public function getCharactersCharacterIdFwStats($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -114,13 +114,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdFwStatsWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk';
         $request = $this->getCharactersCharacterIdFwStatsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -172,7 +172,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class FactionWarfareApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class FactionWarfareApi
      */
     public function getCharactersCharacterIdFwStatsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFwStatsOk';
         $request = $this->getCharactersCharacterIdFwStatsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -415,9 +415,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk
      */
     public function getCorporationsCorporationIdFwStats($corporationId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -436,13 +436,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdFwStatsWithHttpInfo($corporationId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk';
         $request = $this->getCorporationsCorporationIdFwStatsRequest($corporationId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -494,7 +494,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class FactionWarfareApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class FactionWarfareApi
      */
     public function getCorporationsCorporationIdFwStatsAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdFwStatsOk';
         $request = $this->getCorporationsCorporationIdFwStatsRequest($corporationId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -735,9 +735,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsOk
      */
     public function getFwLeaderboards($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -754,13 +754,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFwLeaderboardsWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsOk';
         $request = $this->getFwLeaderboardsRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -812,7 +812,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -820,7 +820,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class FactionWarfareApi
      */
     public function getFwLeaderboardsAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsOk';
         $request = $this->getFwLeaderboardsRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1013,9 +1013,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk
      */
     public function getFwLeaderboardsCharacters($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1032,13 +1032,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFwLeaderboardsCharactersWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk';
         $request = $this->getFwLeaderboardsCharactersRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1090,7 +1090,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1098,7 +1098,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1144,7 +1144,7 @@ class FactionWarfareApi
      */
     public function getFwLeaderboardsCharactersAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCharactersOk';
         $request = $this->getFwLeaderboardsCharactersRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1291,9 +1291,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk
      */
     public function getFwLeaderboardsCorporations($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1310,13 +1310,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFwLeaderboardsCorporationsWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk';
         $request = $this->getFwLeaderboardsCorporationsRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1368,7 +1368,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1376,7 +1376,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1422,7 +1422,7 @@ class FactionWarfareApi
      */
     public function getFwLeaderboardsCorporationsAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsOk';
         $request = $this->getFwLeaderboardsCorporationsRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1569,9 +1569,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwStats200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwStats200Ok[]
      */
     public function getFwStats($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1588,13 +1588,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFwStats200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFwStats200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFwStatsWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwStats200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwStats200Ok[]';
         $request = $this->getFwStatsRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1646,7 +1646,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFwStats200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFwStats200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1654,7 +1654,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1700,7 +1700,7 @@ class FactionWarfareApi
      */
     public function getFwStatsAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwStats200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwStats200Ok[]';
         $request = $this->getFwStatsRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1847,9 +1847,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwSystems200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwSystems200Ok[]
      */
     public function getFwSystems($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1866,13 +1866,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFwSystems200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFwSystems200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFwSystemsWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwSystems200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwSystems200Ok[]';
         $request = $this->getFwSystemsRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1924,7 +1924,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFwSystems200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFwSystems200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1932,7 +1932,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1978,7 +1978,7 @@ class FactionWarfareApi
      */
     public function getFwSystemsAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwSystems200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwSystems200Ok[]';
         $request = $this->getFwSystemsRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -2125,9 +2125,9 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwWars200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwWars200Ok[]
      */
     public function getFwWars($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -2144,13 +2144,13 @@ class FactionWarfareApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetFwWars200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetFwWars200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getFwWarsWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwWars200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwWars200Ok[]';
         $request = $this->getFwWarsRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -2202,7 +2202,7 @@ class FactionWarfareApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetFwWars200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetFwWars200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2210,7 +2210,7 @@ class FactionWarfareApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2256,7 +2256,7 @@ class FactionWarfareApi
      */
     public function getFwWarsAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetFwWars200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetFwWars200Ok[]';
         $request = $this->getFwWarsRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * CalendarApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class CalendarApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]
      */
     public function getCharactersCharacterIdCalendar($characterId, $datasource = 'tranquility', $fromEvent = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -116,13 +116,13 @@ class CalendarApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdCalendarWithHttpInfo($characterId, $datasource = 'tranquility', $fromEvent = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]';
         $request = $this->getCharactersCharacterIdCalendarRequest($characterId, $datasource, $fromEvent, $token, $userAgent, $xUserAgent);
 
         try {
@@ -174,7 +174,7 @@ class CalendarApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class CalendarApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class CalendarApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class CalendarApi
      */
     public function getCharactersCharacterIdCalendarAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $fromEvent = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendar200Ok[]';
         $request = $this->getCharactersCharacterIdCalendarRequest($characterId, $datasource, $fromEvent, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -425,9 +425,9 @@ class CalendarApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk
      */
     public function getCharactersCharacterIdCalendarEventId($characterId, $eventId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -447,13 +447,13 @@ class CalendarApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdCalendarEventIdWithHttpInfo($characterId, $eventId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk';
         $request = $this->getCharactersCharacterIdCalendarEventIdRequest($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -505,7 +505,7 @@ class CalendarApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class CalendarApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class CalendarApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -573,7 +573,7 @@ class CalendarApi
      */
     public function getCharactersCharacterIdCalendarEventIdAsyncWithHttpInfo($characterId, $eventId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdOk';
         $request = $this->getCharactersCharacterIdCalendarEventIdRequest($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -766,9 +766,9 @@ class CalendarApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]
      */
     public function getCharactersCharacterIdCalendarEventIdAttendees($characterId, $eventId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -788,13 +788,13 @@ class CalendarApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdCalendarEventIdAttendeesWithHttpInfo($characterId, $eventId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]';
         $request = $this->getCharactersCharacterIdCalendarEventIdAttendeesRequest($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -846,7 +846,7 @@ class CalendarApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -854,7 +854,7 @@ class CalendarApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -862,7 +862,7 @@ class CalendarApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -914,7 +914,7 @@ class CalendarApi
      */
     public function getCharactersCharacterIdCalendarEventIdAttendeesAsyncWithHttpInfo($characterId, $eventId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdCalendarEventIdAttendees200Ok[]';
         $request = $this->getCharactersCharacterIdCalendarEventIdAttendeesRequest($characterId, $eventId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1102,13 +1102,13 @@ class CalendarApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  int $eventId The ID of the event requested (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1124,13 +1124,13 @@ class CalendarApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  int $eventId The ID of the event requested (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1174,7 +1174,7 @@ class CalendarApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1182,7 +1182,7 @@ class CalendarApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1199,7 +1199,7 @@ class CalendarApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  int $eventId The ID of the event requested (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -1225,7 +1225,7 @@ class CalendarApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  int $eventId The ID of the event requested (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -1267,7 +1267,7 @@ class CalendarApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  int $eventId The ID of the event requested (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdCalendarEventIdResponse $response The response value to set, overriding current value. (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)

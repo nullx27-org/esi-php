@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetFwLeaderboardsOk implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kills' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsKills',
-        'victoryPoints' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsVictoryPoints'
+        'kills' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsKills',
+        'victoryPoints' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsVictoryPoints'
     ];
 
     /**
@@ -227,7 +227,7 @@ class GetFwLeaderboardsOk implements ModelInterface, ArrayAccess
     /**
      * Gets kills
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsKills
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsKills
      */
     public function getKills()
     {
@@ -237,7 +237,7 @@ class GetFwLeaderboardsOk implements ModelInterface, ArrayAccess
     /**
      * Sets kills
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsKills $kills kills
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsKills $kills kills
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class GetFwLeaderboardsOk implements ModelInterface, ArrayAccess
     /**
      * Gets victoryPoints
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsVictoryPoints
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -261,7 +261,7 @@ class GetFwLeaderboardsOk implements ModelInterface, ArrayAccess
     /**
      * Sets victoryPoints
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsVictoryPoints $victoryPoints victoryPoints
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsVictoryPoints $victoryPoints victoryPoints
      *
      * @return $this
      */

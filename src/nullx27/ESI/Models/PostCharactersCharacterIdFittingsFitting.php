@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * PostCharactersCharacterIdFittingsFitting Class Doc Comment
  *
  * @category Class
  * @description fitting object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
         'name' => 'string',
         'description' => 'string',
         'shipTypeId' => 'int',
-        'items' => '\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsItem[]'
+        'items' => '\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsItem[]'
     ];
 
     /**
@@ -365,7 +365,7 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
     /**
      * Gets items
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsItem[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsItem[]
      */
     public function getItems()
     {
@@ -375,7 +375,7 @@ class PostCharactersCharacterIdFittingsFitting implements ModelInterface, ArrayA
     /**
      * Sets items
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsItem[] $items items array
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsItem[] $items items array
      *
      * @return $this
      */

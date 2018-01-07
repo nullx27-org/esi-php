@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **portionSize** | **int** | portion_size integer | [optional] 
 **mass** | **float** | mass number | [optional] 
 **graphicId** | **int** | graphic_id integer | [optional] 
-**dogmaAttributes** | [**\nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]**](GetUniverseTypesTypeIdDogmaAttribute.md) | dogma_attributes array | [optional] 
-**dogmaEffects** | [**\nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]**](GetUniverseTypesTypeIdDogmaEffect.md) | dogma_effects array | [optional] 
+**dogmaAttributes** | [**\nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]**](GetUniverseTypesTypeIdDogmaAttribute.md) | dogma_attributes array | [optional] 
+**dogmaEffects** | [**\nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]**](GetUniverseTypesTypeIdDogmaEffect.md) | dogma_effects array | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

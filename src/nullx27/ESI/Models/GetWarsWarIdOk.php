@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetWarsWarIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,9 +65,9 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
         'finished' => '\DateTime',
         'mutual' => 'bool',
         'openForAllies' => 'bool',
-        'aggressor' => '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdAggressor',
-        'defender' => '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdDefender',
-        'allies' => '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdAlly[]'
+        'aggressor' => '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdAggressor',
+        'defender' => '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdDefender',
+        'allies' => '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdAlly[]'
     ];
 
     /**
@@ -467,7 +467,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets aggressor
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdAggressor
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdAggressor
      */
     public function getAggressor()
     {
@@ -477,7 +477,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets aggressor
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdAggressor $aggressor aggressor
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdAggressor $aggressor aggressor
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets defender
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdDefender
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdDefender
      */
     public function getDefender()
     {
@@ -501,7 +501,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets defender
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdDefender $defender defender
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdDefender $defender defender
      *
      * @return $this
      */
@@ -515,7 +515,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets allies
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdAlly[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdAlly[]
      */
     public function getAllies()
     {
@@ -525,7 +525,7 @@ class GetWarsWarIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets allies
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdAlly[] $allies allied corporations or alliances, each object contains either corporation_id or alliance_id
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdAlly[] $allies allied corporations or alliances, each object contains either corporation_id or alliance_id
      *
      * @return $this
      */

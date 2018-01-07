@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdStructures200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,10 +63,10 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
         'corporationId' => 'int',
         'systemId' => 'int',
         'profileId' => 'int',
-        'currentVul' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresCurrentVul[]',
-        'nextVul' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresNextVul[]',
+        'currentVul' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresCurrentVul[]',
+        'nextVul' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresNextVul[]',
         'fuelExpires' => '\DateTime',
-        'services' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresService[]',
+        'services' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresService[]',
         'stateTimerStart' => '\DateTime',
         'stateTimerEnd' => '\DateTime',
         'unanchorsAt' => '\DateTime'
@@ -437,7 +437,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Gets currentVul
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresCurrentVul[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresCurrentVul[]
      */
     public function getCurrentVul()
     {
@@ -447,7 +447,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Sets currentVul
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresCurrentVul[] $currentVul This week's vulnerability windows, Monday is day 0
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresCurrentVul[] $currentVul This week's vulnerability windows, Monday is day 0
      *
      * @return $this
      */
@@ -461,7 +461,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Gets nextVul
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresNextVul[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresNextVul[]
      */
     public function getNextVul()
     {
@@ -471,7 +471,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Sets nextVul
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresNextVul[] $nextVul Next week's vulnerability windows, Monday is day 0
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresNextVul[] $nextVul Next week's vulnerability windows, Monday is day 0
      *
      * @return $this
      */
@@ -509,7 +509,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Gets services
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresService[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresService[]
      */
     public function getServices()
     {
@@ -519,7 +519,7 @@ class GetCorporationsCorporationIdStructures200Ok implements ModelInterface, Arr
     /**
      * Sets services
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresService[] $services Contains a list of service upgrades, and their state
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdStructuresService[] $services Contains a list of service upgrades, and their state
      *
      * @return $this
      */

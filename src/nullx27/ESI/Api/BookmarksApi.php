@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * BookmarksApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]
      */
     public function getCharactersCharacterIdBookmarks($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -116,13 +116,13 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdBookmarksWithHttpInfo($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]';
         $request = $this->getCharactersCharacterIdBookmarksRequest($characterId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -174,7 +174,7 @@ class BookmarksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class BookmarksApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class BookmarksApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class BookmarksApi
      */
     public function getCharactersCharacterIdBookmarksAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]';
         $request = $this->getCharactersCharacterIdBookmarksRequest($characterId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -425,9 +425,9 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]
      */
     public function getCharactersCharacterIdBookmarksFolders($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -447,13 +447,13 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdBookmarksFoldersWithHttpInfo($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]';
         $request = $this->getCharactersCharacterIdBookmarksFoldersRequest($characterId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -505,7 +505,7 @@ class BookmarksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class BookmarksApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class BookmarksApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -573,7 +573,7 @@ class BookmarksApi
      */
     public function getCharactersCharacterIdBookmarksFoldersAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]';
         $request = $this->getCharactersCharacterIdBookmarksFoldersRequest($characterId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -756,9 +756,9 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]
      */
     public function getCorporationsCorporationIdBookmarks($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -778,13 +778,13 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdBookmarksWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]';
         $request = $this->getCorporationsCorporationIdBookmarksRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -836,7 +836,7 @@ class BookmarksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -844,7 +844,7 @@ class BookmarksApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -852,7 +852,7 @@ class BookmarksApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -904,7 +904,7 @@ class BookmarksApi
      */
     public function getCorporationsCorporationIdBookmarksAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]';
         $request = $this->getCorporationsCorporationIdBookmarksRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1087,9 +1087,9 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]
      */
     public function getCorporationsCorporationIdBookmarksFolders($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1109,13 +1109,13 @@ class BookmarksApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdBookmarksFoldersWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]';
         $request = $this->getCorporationsCorporationIdBookmarksFoldersRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1167,7 +1167,7 @@ class BookmarksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1175,7 +1175,7 @@ class BookmarksApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1183,7 +1183,7 @@ class BookmarksApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1235,7 +1235,7 @@ class BookmarksApi
      */
     public function getCorporationsCorporationIdBookmarksFoldersAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]';
         $request = $this->getCorporationsCorporationIdBookmarksFoldersRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client

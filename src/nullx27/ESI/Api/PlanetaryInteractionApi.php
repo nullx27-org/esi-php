@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * PlanetaryInteractionApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]
      */
     public function getCharactersCharacterIdPlanets($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -114,13 +114,13 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdPlanetsWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]';
         $request = $this->getCharactersCharacterIdPlanetsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -172,7 +172,7 @@ class PlanetaryInteractionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class PlanetaryInteractionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class PlanetaryInteractionApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class PlanetaryInteractionApi
      */
     public function getCharactersCharacterIdPlanetsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanets200Ok[]';
         $request = $this->getCharactersCharacterIdPlanetsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -416,9 +416,9 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk
      */
     public function getCharactersCharacterIdPlanetsPlanetId($characterId, $planetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -438,13 +438,13 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdPlanetsPlanetIdWithHttpInfo($characterId, $planetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk';
         $request = $this->getCharactersCharacterIdPlanetsPlanetIdRequest($characterId, $planetId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -496,7 +496,7 @@ class PlanetaryInteractionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class PlanetaryInteractionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class PlanetaryInteractionApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -520,7 +520,7 @@ class PlanetaryInteractionApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -572,7 +572,7 @@ class PlanetaryInteractionApi
      */
     public function getCharactersCharacterIdPlanetsPlanetIdAsyncWithHttpInfo($characterId, $planetId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdOk';
         $request = $this->getCharactersCharacterIdPlanetsPlanetIdRequest($characterId, $planetId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -765,9 +765,9 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]
      */
     public function getCorporationsCorporationIdCustomsOffices($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -787,13 +787,13 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdCustomsOfficesWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]';
         $request = $this->getCorporationsCorporationIdCustomsOfficesRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -845,7 +845,7 @@ class PlanetaryInteractionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -853,7 +853,7 @@ class PlanetaryInteractionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -861,7 +861,7 @@ class PlanetaryInteractionApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -913,7 +913,7 @@ class PlanetaryInteractionApi
      */
     public function getCorporationsCorporationIdCustomsOfficesAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdCustomsOffices200Ok[]';
         $request = $this->getCorporationsCorporationIdCustomsOfficesRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1094,9 +1094,9 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk
      */
     public function getUniverseSchematicsSchematicId($schematicId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1114,13 +1114,13 @@ class PlanetaryInteractionApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniverseSchematicsSchematicIdWithHttpInfo($schematicId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk';
         $request = $this->getUniverseSchematicsSchematicIdRequest($schematicId, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1172,7 +1172,7 @@ class PlanetaryInteractionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1180,7 +1180,7 @@ class PlanetaryInteractionApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1188,7 +1188,7 @@ class PlanetaryInteractionApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1236,7 +1236,7 @@ class PlanetaryInteractionApi
      */
     public function getUniverseSchematicsSchematicIdAsyncWithHttpInfo($schematicId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetUniverseSchematicsSchematicIdOk';
         $request = $this->getUniverseSchematicsSchematicIdRequest($schematicId, $datasource, $userAgent, $xUserAgent);
 
         return $this->client

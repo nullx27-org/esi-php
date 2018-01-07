@@ -1,4 +1,4 @@
-# nullx27ESI\BookmarksApi
+# nullx27\ESI\BookmarksApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdBookmarks**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[] getCharactersCharacterIdBookmarks($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[] getCharactersCharacterIdBookmarks($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List bookmarks
 
@@ -23,9 +23,9 @@ A list of your character's personal bookmarks  --- Alternate route: `/dev/charac
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\BookmarksApi(
+$apiInstance = new nullx27\ESI\Api\BookmarksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]**](../Model/GetCharactersCharacterIdBookmarks200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarks200Ok[]**](../Model/GetCharactersCharacterIdBookmarks200Ok.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdBookmarksFolders**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[] getCharactersCharacterIdBookmarksFolders($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[] getCharactersCharacterIdBookmarksFolders($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List bookmark folders
 
@@ -86,9 +86,9 @@ A list of your character's personal bookmark folders  --- Alternate route: `/dev
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\BookmarksApi(
+$apiInstance = new nullx27\ESI\Api\BookmarksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]**](../Model/GetCharactersCharacterIdBookmarksFolders200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksFolders200Ok[]**](../Model/GetCharactersCharacterIdBookmarksFolders200Ok.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdBookmarks**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[] getCorporationsCorporationIdBookmarks($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[] getCorporationsCorporationIdBookmarks($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List corporation bookmarks
 
@@ -149,9 +149,9 @@ A list of your corporation's bookmarks  --- Alternate route: `/dev/corporations/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\BookmarksApi(
+$apiInstance = new nullx27\ESI\Api\BookmarksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]**](../Model/GetCorporationsCorporationIdBookmarks200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarks200Ok[]**](../Model/GetCorporationsCorporationIdBookmarks200Ok.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdBookmarksFolders**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[] getCorporationsCorporationIdBookmarksFolders($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[] getCorporationsCorporationIdBookmarksFolders($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List corporation bookmark folders
 
@@ -212,9 +212,9 @@ A list of your corporation's bookmark folders  --- Alternate route: `/dev/corpor
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\BookmarksApi(
+$apiInstance = new nullx27\ESI\Api\BookmarksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]**](../Model/GetCorporationsCorporationIdBookmarksFolders200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksFolders200Ok[]**](../Model/GetCorporationsCorporationIdBookmarksFolders200Ok.md)
 
 ### Authorization
 

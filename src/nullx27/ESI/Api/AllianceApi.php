@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * AllianceApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -110,7 +110,7 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -176,7 +176,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -370,9 +370,9 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk
      */
     public function getAlliancesAllianceId($allianceId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -390,13 +390,13 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesAllianceIdWithHttpInfo($allianceId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk';
         $request = $this->getAlliancesAllianceIdRequest($allianceId, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -448,7 +448,7 @@ class AllianceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -456,7 +456,7 @@ class AllianceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -464,7 +464,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class AllianceApi
      */
     public function getAlliancesAllianceIdAsyncWithHttpInfo($allianceId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk';
         $request = $this->getAlliancesAllianceIdRequest($allianceId, $datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -679,7 +679,7 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -699,7 +699,7 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -765,7 +765,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -980,9 +980,9 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk
      */
     public function getAlliancesAllianceIdIcons($allianceId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1000,13 +1000,13 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesAllianceIdIconsWithHttpInfo($allianceId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk';
         $request = $this->getAlliancesAllianceIdIconsRequest($allianceId, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1058,7 +1058,7 @@ class AllianceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1066,7 +1066,7 @@ class AllianceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1074,7 +1074,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1122,7 +1122,7 @@ class AllianceApi
      */
     public function getAlliancesAllianceIdIconsAsyncWithHttpInfo($allianceId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk';
         $request = $this->getAlliancesAllianceIdIconsRequest($allianceId, $datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1289,9 +1289,9 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]
      */
     public function getAlliancesNames($allianceIds, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1309,13 +1309,13 @@ class AllianceApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesNamesWithHttpInfo($allianceIds, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]';
         $request = $this->getAlliancesNamesRequest($allianceIds, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1367,7 +1367,7 @@ class AllianceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1375,7 +1375,7 @@ class AllianceApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1423,7 +1423,7 @@ class AllianceApi
      */
     public function getAlliancesNamesAsyncWithHttpInfo($allianceIds, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]';
         $request = $this->getAlliancesNamesRequest($allianceIds, $datasource, $userAgent, $xUserAgent);
 
         return $this->client

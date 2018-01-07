@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI\nullx27\ESI\Models
+ * @package  nullx27\ESI\nullx27\ESI\Models
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 /**
  * Interface abstracting model access.
  *
- * @package nullx27ESI\nullx27\ESI\Models
+ * @package nullx27\ESI\nullx27\ESI\Models
  * @author  Swagger Codegen team
  */
 interface ModelInterface

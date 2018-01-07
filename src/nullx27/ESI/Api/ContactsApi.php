@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * ContactsApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -404,9 +404,9 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]
      */
     public function getAlliancesAllianceIdContacts($allianceId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -426,13 +426,13 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlliancesAllianceIdContactsWithHttpInfo($allianceId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]';
         $request = $this->getAlliancesAllianceIdContactsRequest($allianceId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -484,7 +484,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -492,7 +492,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -552,7 +552,7 @@ class ContactsApi
      */
     public function getAlliancesAllianceIdContactsAsyncWithHttpInfo($allianceId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdContacts200Ok[]';
         $request = $this->getAlliancesAllianceIdContactsRequest($allianceId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -735,9 +735,9 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]
      */
     public function getCharactersCharacterIdContacts($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -757,13 +757,13 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdContactsWithHttpInfo($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]';
         $request = $this->getCharactersCharacterIdContactsRequest($characterId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -815,7 +815,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -823,7 +823,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -831,7 +831,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -883,7 +883,7 @@ class ContactsApi
      */
     public function getCharactersCharacterIdContactsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContacts200Ok[]';
         $request = $this->getCharactersCharacterIdContactsRequest($characterId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1065,9 +1065,9 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]
      */
     public function getCharactersCharacterIdContactsLabels($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1086,13 +1086,13 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdContactsLabelsWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]';
         $request = $this->getCharactersCharacterIdContactsLabelsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1144,7 +1144,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1152,7 +1152,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1160,7 +1160,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1210,7 +1210,7 @@ class ContactsApi
      */
     public function getCharactersCharacterIdContactsLabelsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdContactsLabels200Ok[]';
         $request = $this->getCharactersCharacterIdContactsLabelsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1388,9 +1388,9 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]
      */
     public function getCorporationsCorporationIdContacts($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1410,13 +1410,13 @@ class ContactsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdContactsWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]';
         $request = $this->getCorporationsCorporationIdContactsRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1468,7 +1468,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1476,7 +1476,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,7 +1484,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1536,7 +1536,7 @@ class ContactsApi
      */
     public function getCorporationsCorporationIdContactsAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdContacts200Ok[]';
         $request = $this->getCorporationsCorporationIdContactsRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1722,7 +1722,7 @@ class ContactsApi
      * @param  bool $watched Whether the new contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -1747,7 +1747,7 @@ class ContactsApi
      * @param  bool $watched Whether the new contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -1813,7 +1813,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1821,7 +1821,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2098,7 +2098,7 @@ class ContactsApi
      * @param  bool $watched Whether the contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2122,7 +2122,7 @@ class ContactsApi
      * @param  bool $watched Whether the contact should be watched, note this is only effective on characters (optional, default to false)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2166,7 +2166,7 @@ class ContactsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2174,7 +2174,7 @@ class ContactsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

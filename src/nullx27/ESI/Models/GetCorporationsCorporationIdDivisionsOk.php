@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdDivisionsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'hangar' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsHangar[]',
-        'wallet' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsWallet[]'
+        'hangar' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsHangar[]',
+        'wallet' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsWallet[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Gets hangar
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsHangar[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsHangar[]
      */
     public function getHangar()
     {
@@ -225,7 +225,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Sets hangar
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsHangar[] $hangar hangar array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsHangar[] $hangar hangar array
      *
      * @return $this
      */
@@ -239,7 +239,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Gets wallet
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsWallet[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsWallet[]
      */
     public function getWallet()
     {
@@ -249,7 +249,7 @@ class GetCorporationsCorporationIdDivisionsOk implements ModelInterface, ArrayAc
     /**
      * Sets wallet
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsWallet[] $wallet wallet array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdDivisionsWallet[] $wallet wallet array
      *
      * @return $this
      */

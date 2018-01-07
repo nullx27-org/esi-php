@@ -1,4 +1,4 @@
-# nullx27ESI\AssetsApi
+# nullx27\ESI\AssetsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdAssets**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdAssets200Ok[] getCharactersCharacterIdAssets($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdAssets200Ok[] getCharactersCharacterIdAssets($characterId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Get character assets
 
@@ -25,9 +25,9 @@ Return a list of the characters assets  --- Alternate route: `/dev/characters/{c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\AssetsApi(
+$apiInstance = new nullx27\ESI\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdAssets200Ok[]**](../Model/GetCharactersCharacterIdAssets200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdAssets200Ok[]**](../Model/GetCharactersCharacterIdAssets200Ok.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdAssets**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdAssets200Ok[] getCorporationsCorporationIdAssets($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdAssets200Ok[] getCorporationsCorporationIdAssets($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 Get corporation assets
 
@@ -88,9 +88,9 @@ Return a list of the corporation assets  --- Alternate route: `/dev/corporations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\AssetsApi(
+$apiInstance = new nullx27\ESI\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdAssets200Ok[]**](../Model/GetCorporationsCorporationIdAssets200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdAssets200Ok[]**](../Model/GetCorporationsCorporationIdAssets200Ok.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdAssetsLocations**
-> \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($characterId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsLocations200Ok[] postCharactersCharacterIdAssetsLocations($characterId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character asset locations
 
@@ -151,16 +151,16 @@ Return locations for a set of item ids, which you can get from character assets 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\AssetsApi(
+$apiInstance = new nullx27\ESI\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $characterId = 56; // int | An EVE character ID
-$itemIds = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
+$itemIds = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsLocations200Ok[]**](../Model/PostCharactersCharacterIdAssetsLocations200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsLocations200Ok[]**](../Model/PostCharactersCharacterIdAssetsLocations200Ok.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdAssetsNames**
-> \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($characterId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsNames200Ok[] postCharactersCharacterIdAssetsNames($characterId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character asset names
 
@@ -214,16 +214,16 @@ Return names for a set of item ids, which you can get from character assets endp
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\AssetsApi(
+$apiInstance = new nullx27\ESI\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $characterId = 56; // int | An EVE character ID
-$itemIds = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
+$itemIds = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsNames200Ok[]**](../Model/PostCharactersCharacterIdAssetsNames200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdAssetsNames200Ok[]**](../Model/PostCharactersCharacterIdAssetsNames200Ok.md)
 
 ### Authorization
 
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCorporationsCorporationIdAssetsLocations**
-> \nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporationId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocations200Ok[] postCorporationsCorporationIdAssetsLocations($corporationId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
 
 Get corporation asset locations
 
@@ -277,16 +277,16 @@ Return locations for a set of item ids, which you can get from corporation asset
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\AssetsApi(
+$apiInstance = new nullx27\ESI\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $corporationId = 56; // int | An EVE corporation ID
-$itemIds = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
+$itemIds = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocations200Ok[]**](../Model/PostCorporationsCorporationIdAssetsLocations200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocations200Ok[]**](../Model/PostCorporationsCorporationIdAssetsLocations200Ok.md)
 
 ### Authorization
 
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCorporationsCorporationIdAssetsNames**
-> \nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporationId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsNames200Ok[] postCorporationsCorporationIdAssetsNames($corporationId, $itemIds, $datasource, $token, $userAgent, $xUserAgent)
 
 Get coporation asset names
 
@@ -340,16 +340,16 @@ Return names for a set of item ids, which you can get from corporation assets en
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\AssetsApi(
+$apiInstance = new nullx27\ESI\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $corporationId = 56; // int | An EVE corporation ID
-$itemIds = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
+$itemIds = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | A list of item ids
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -377,7 +377,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsNames200Ok[]**](../Model/PostCorporationsCorporationIdAssetsNames200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsNames200Ok[]**](../Model/PostCorporationsCorporationIdAssetsNames200Ok.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# nullx27ESI\StatusApi
+# nullx27\ESI\StatusApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getStatus**
-> \nullx27ESI\nullx27\ESI\Models\GetStatusOk getStatus($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetStatusOk getStatus($datasource, $userAgent, $xUserAgent)
 
 Retrieve the uptime and player counts
 
@@ -19,7 +19,7 @@ EVE Server status  --- Alternate route: `/dev/status/`  Alternate route: `/legac
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\StatusApi(
+$apiInstance = new nullx27\ESI\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetStatusOk**](../Model/GetStatusOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetStatusOk**](../Model/GetStatusOk.md)
 
 ### Authorization
 

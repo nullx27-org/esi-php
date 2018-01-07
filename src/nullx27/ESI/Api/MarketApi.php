@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * MarketApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]
      */
     public function getCharactersCharacterIdOrders($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -114,13 +114,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdOrdersWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]';
         $request = $this->getCharactersCharacterIdOrdersRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -172,7 +172,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class MarketApi
      */
     public function getCharactersCharacterIdOrdersAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]';
         $request = $this->getCharactersCharacterIdOrdersRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -416,9 +416,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]
      */
     public function getCorporationsCorporationIdOrders($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -438,13 +438,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdOrdersWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]';
         $request = $this->getCorporationsCorporationIdOrdersRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -496,7 +496,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class MarketApi
      */
     public function getCorporationsCorporationIdOrdersAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]';
         $request = $this->getCorporationsCorporationIdOrdersRequest($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -744,7 +744,7 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -763,7 +763,7 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -829,7 +829,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1024,9 +1024,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk
      */
     public function getMarketsGroupsMarketGroupId($marketGroupId, $datasource = 'tranquility', $language = 'en-us', $userAgent = null, $xUserAgent = null)
     {
@@ -1045,13 +1045,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsGroupsMarketGroupIdWithHttpInfo($marketGroupId, $datasource = 'tranquility', $language = 'en-us', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk';
         $request = $this->getMarketsGroupsMarketGroupIdRequest($marketGroupId, $datasource, $language, $userAgent, $xUserAgent);
 
         try {
@@ -1103,7 +1103,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1111,7 +1111,7 @@ class MarketApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1119,7 +1119,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1169,7 +1169,7 @@ class MarketApi
      */
     public function getMarketsGroupsMarketGroupIdAsyncWithHttpInfo($marketGroupId, $datasource = 'tranquility', $language = 'en-us', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk';
         $request = $this->getMarketsGroupsMarketGroupIdRequest($marketGroupId, $datasource, $language, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1336,9 +1336,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]
      */
     public function getMarketsPrices($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1355,13 +1355,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsPricesWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]';
         $request = $this->getMarketsPricesRequest($datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1413,7 +1413,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1421,7 +1421,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1467,7 +1467,7 @@ class MarketApi
      */
     public function getMarketsPricesAsyncWithHttpInfo($datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]';
         $request = $this->getMarketsPricesRequest($datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1616,9 +1616,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]
      */
     public function getMarketsRegionIdHistory($regionId, $typeId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -1637,13 +1637,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsRegionIdHistoryWithHttpInfo($regionId, $typeId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]';
         $request = $this->getMarketsRegionIdHistoryRequest($regionId, $typeId, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -1695,7 +1695,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1703,7 +1703,7 @@ class MarketApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistoryUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistoryUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1711,7 +1711,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1761,7 +1761,7 @@ class MarketApi
      */
     public function getMarketsRegionIdHistoryAsyncWithHttpInfo($regionId, $typeId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]';
         $request = $this->getMarketsRegionIdHistoryRequest($regionId, $typeId, $datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1938,9 +1938,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]
      */
     public function getMarketsRegionIdOrders($orderType, $regionId, $datasource = 'tranquility', $page = '1', $typeId = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1961,13 +1961,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsRegionIdOrdersWithHttpInfo($orderType, $regionId, $datasource = 'tranquility', $page = '1', $typeId = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]';
         $request = $this->getMarketsRegionIdOrdersRequest($orderType, $regionId, $datasource, $page, $typeId, $userAgent, $xUserAgent);
 
         try {
@@ -2019,7 +2019,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2027,7 +2027,7 @@ class MarketApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrdersUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrdersUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2035,7 +2035,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2089,7 +2089,7 @@ class MarketApi
      */
     public function getMarketsRegionIdOrdersAsyncWithHttpInfo($orderType, $regionId, $datasource = 'tranquility', $page = '1', $typeId = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]';
         $request = $this->getMarketsRegionIdOrdersRequest($orderType, $regionId, $datasource, $page, $typeId, $userAgent, $xUserAgent);
 
         return $this->client
@@ -2274,7 +2274,7 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -2295,7 +2295,7 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -2361,7 +2361,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2581,9 +2581,9 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]
      */
     public function getMarketsStructuresStructureId($structureId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -2603,13 +2603,13 @@ class MarketApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMarketsStructuresStructureIdWithHttpInfo($structureId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]';
         $request = $this->getMarketsStructuresStructureIdRequest($structureId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         try {
@@ -2661,7 +2661,7 @@ class MarketApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2669,7 +2669,7 @@ class MarketApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2677,7 +2677,7 @@ class MarketApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2729,7 +2729,7 @@ class MarketApi
      */
     public function getMarketsStructuresStructureIdAsyncWithHttpInfo($structureId, $datasource = 'tranquility', $page = '1', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]';
         $request = $this->getMarketsStructuresStructureIdRequest($structureId, $datasource, $page, $token, $userAgent, $xUserAgent);
 
         return $this->client

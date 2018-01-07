@@ -1,4 +1,4 @@
-# nullx27ESI\SkillsApi
+# nullx27\ESI\SkillsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdAttributes**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdAttributesOk getCharactersCharacterIdAttributes($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdAttributesOk getCharactersCharacterIdAttributes($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character attributes
 
@@ -22,9 +22,9 @@ Return attributes of a character  --- Alternate route: `/dev/characters/{charact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\SkillsApi(
+$apiInstance = new nullx27\ESI\Api\SkillsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdAttributesOk**](../Model/GetCharactersCharacterIdAttributesOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdAttributesOk**](../Model/GetCharactersCharacterIdAttributesOk.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdSkillqueue**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillqueue200Ok[] getCharactersCharacterIdSkillqueue($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillqueue200Ok[] getCharactersCharacterIdSkillqueue($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character's skill queue
 
@@ -83,9 +83,9 @@ List the configured skill queue for the given character  --- Alternate route: `/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\SkillsApi(
+$apiInstance = new nullx27\ESI\Api\SkillsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillqueue200Ok[]**](../Model/GetCharactersCharacterIdSkillqueue200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillqueue200Ok[]**](../Model/GetCharactersCharacterIdSkillqueue200Ok.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdSkills**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillsOk getCharactersCharacterIdSkills($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillsOk getCharactersCharacterIdSkills($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character skills
 
@@ -144,9 +144,9 @@ List all trained skills for the given character  --- Alternate route: `/dev/char
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\SkillsApi(
+$apiInstance = new nullx27\ESI\Api\SkillsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillsOk**](../Model/GetCharactersCharacterIdSkillsOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdSkillsOk**](../Model/GetCharactersCharacterIdSkillsOk.md)
 
 ### Authorization
 

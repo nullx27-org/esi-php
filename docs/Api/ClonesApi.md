@@ -1,4 +1,4 @@
-# nullx27ESI\ClonesApi
+# nullx27\ESI\ClonesApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdClones**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk getCharactersCharacterIdClones($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk getCharactersCharacterIdClones($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get clones
 
@@ -21,9 +21,9 @@ A list of the character's clones  --- Alternate route: `/dev/characters/{charact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ClonesApi(
+$apiInstance = new nullx27\ESI\Api\ClonesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk**](../Model/GetCharactersCharacterIdClonesOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesOk**](../Model/GetCharactersCharacterIdClonesOk.md)
 
 ### Authorization
 
@@ -82,9 +82,9 @@ Return implants on the active clone of a character  --- Alternate route: `/dev/c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\ClonesApi(
+$apiInstance = new nullx27\ESI\Api\ClonesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

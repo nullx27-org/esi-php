@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * FittingsApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class FittingsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class FittingsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class FittingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class FittingsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -397,9 +397,9 @@ class FittingsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]
      */
     public function getCharactersCharacterIdFittings($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -418,13 +418,13 @@ class FittingsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdFittingsWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]';
         $request = $this->getCharactersCharacterIdFittingsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -476,7 +476,7 @@ class FittingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -484,7 +484,7 @@ class FittingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -492,7 +492,7 @@ class FittingsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -542,7 +542,7 @@ class FittingsApi
      */
     public function getCharactersCharacterIdFittingsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]';
         $request = $this->getCharactersCharacterIdFittingsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -715,14 +715,14 @@ class FittingsApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated
      */
     public function postCharactersCharacterIdFittings($characterId, $datasource = 'tranquility', $fitting = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -737,18 +737,18 @@ class FittingsApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCharactersCharacterIdFittingsWithHttpInfo($characterId, $datasource = 'tranquility', $fitting = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated';
         $request = $this->postCharactersCharacterIdFittingsRequest($characterId, $datasource, $fitting, $token, $userAgent, $xUserAgent);
 
         try {
@@ -800,7 +800,7 @@ class FittingsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -808,7 +808,7 @@ class FittingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -816,7 +816,7 @@ class FittingsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -833,7 +833,7 @@ class FittingsApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
@@ -858,7 +858,7 @@ class FittingsApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
@@ -868,7 +868,7 @@ class FittingsApi
      */
     public function postCharactersCharacterIdFittingsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $fitting = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated';
         $request = $this->postCharactersCharacterIdFittingsRequest($characterId, $datasource, $fitting, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -913,7 +913,7 @@ class FittingsApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting $fitting Details about the new fitting (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)

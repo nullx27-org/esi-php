@@ -1,4 +1,4 @@
-# nullx27ESI\MarketApi
+# nullx27\ESI\MarketApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdOrders**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[] getCharactersCharacterIdOrders($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 List orders from a character
 
@@ -28,9 +28,9 @@ List market orders placed by a character  --- Alternate route: `/dev/characters/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]**](../Model/GetCharactersCharacterIdOrders200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOrders200Ok[]**](../Model/GetCharactersCharacterIdOrders200Ok.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdOrders**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[] getCorporationsCorporationIdOrders($corporationId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List orders from a corporation
 
@@ -89,9 +89,9 @@ List market orders placed on behalf of a corporation  --- Alternate route: `/dev
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]**](../Model/GetCorporationsCorporationIdOrders200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdOrders200Ok[]**](../Model/GetCorporationsCorporationIdOrders200Ok.md)
 
 ### Authorization
 
@@ -151,7 +151,7 @@ Get a list of item groups  --- Alternate route: `/dev/markets/groups/`  Alternat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -193,7 +193,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsGroupsMarketGroupId**
-> \nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk getMarketsGroupsMarketGroupId($marketGroupId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk getMarketsGroupsMarketGroupId($marketGroupId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get item group information
 
@@ -204,7 +204,7 @@ Get information on an item group  --- Alternate route: `/dev/markets/groups/{mar
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk**](../Model/GetMarketsGroupsMarketGroupIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetMarketsGroupsMarketGroupIdOk**](../Model/GetMarketsGroupsMarketGroupIdOk.md)
 
 ### Authorization
 
@@ -250,7 +250,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsPrices**
-> \nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[] getMarketsPrices($datasource, $userAgent, $xUserAgent)
 
 List market prices
 
@@ -261,7 +261,7 @@ Return a list of prices  --- Alternate route: `/dev/markets/prices/`  Alternate 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]**](../Model/GetMarketsPrices200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetMarketsPrices200Ok[]**](../Model/GetMarketsPrices200Ok.md)
 
 ### Authorization
 
@@ -303,7 +303,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdHistory**
-> \nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($regionId, $typeId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[] getMarketsRegionIdHistory($regionId, $typeId, $datasource, $userAgent, $xUserAgent)
 
 List historical market statistics in a region
 
@@ -314,7 +314,7 @@ Return a list of historical market statistics for the specified type in a region
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -346,7 +346,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]**](../Model/GetMarketsRegionIdHistory200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdHistory200Ok[]**](../Model/GetMarketsRegionIdHistory200Ok.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsRegionIdOrders**
-> \nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($orderType, $regionId, $datasource, $page, $typeId, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[] getMarketsRegionIdOrders($orderType, $regionId, $datasource, $page, $typeId, $userAgent, $xUserAgent)
 
 List orders in a region
 
@@ -371,7 +371,7 @@ Return a list of orders in a region  --- Alternate route: `/dev/markets/{region_
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]**](../Model/GetMarketsRegionIdOrders200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetMarketsRegionIdOrders200Ok[]**](../Model/GetMarketsRegionIdOrders200Ok.md)
 
 ### Authorization
 
@@ -432,7 +432,7 @@ Return a list of type IDs that have active orders in the region, for efficient m
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -478,7 +478,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMarketsStructuresStructureId**
-> \nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structureId, $datasource, $page, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[] getMarketsStructuresStructureId($structureId, $datasource, $page, $token, $userAgent, $xUserAgent)
 
 List orders in a structure
 
@@ -490,9 +490,9 @@ Return all orders in a structure  --- Alternate route: `/dev/markets/structures/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\MarketApi(
+$apiInstance = new nullx27\ESI\Api\MarketApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -527,7 +527,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]**](../Model/GetMarketsStructuresStructureId200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetMarketsStructuresStructureId200Ok[]**](../Model/GetMarketsStructuresStructureId200Ok.md)
 
 ### Authorization
 

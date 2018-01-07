@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace nullx27ESI;
+namespace nullx27\ESI;
 
 /**
  * GetCorporationsCorporationIdFwStatsKillsTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace nullx27ESI;
  * @category    Class */
 // * @description Summary of kills done by the given corporation against enemy factions
 /**
- * @package     nullx27ESI
+ * @package     nullx27\ESI
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * WarsApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,7 +92,7 @@ class WarsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int[]
      */
@@ -112,7 +112,7 @@ class WarsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -178,7 +178,7 @@ class WarsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -379,9 +379,9 @@ class WarsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk
      */
     public function getWarsWarId($warId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -399,13 +399,13 @@ class WarsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWarsWarIdWithHttpInfo($warId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk';
         $request = $this->getWarsWarIdRequest($warId, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -457,7 +457,7 @@ class WarsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class WarsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -473,7 +473,7 @@ class WarsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class WarsApi
      */
     public function getWarsWarIdAsyncWithHttpInfo($warId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdOk';
         $request = $this->getWarsWarIdRequest($warId, $datasource, $userAgent, $xUserAgent);
 
         return $this->client
@@ -685,9 +685,9 @@ class WarsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]
      */
     public function getWarsWarIdKillmails($warId, $datasource = 'tranquility', $page = '1', $userAgent = null, $xUserAgent = null)
     {
@@ -706,13 +706,13 @@ class WarsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getWarsWarIdKillmailsWithHttpInfo($warId, $datasource = 'tranquility', $page = '1', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]';
         $request = $this->getWarsWarIdKillmailsRequest($warId, $datasource, $page, $userAgent, $xUserAgent);
 
         try {
@@ -764,7 +764,7 @@ class WarsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -772,7 +772,7 @@ class WarsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmailsUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmailsUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -780,7 +780,7 @@ class WarsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -830,7 +830,7 @@ class WarsApi
      */
     public function getWarsWarIdKillmailsAsyncWithHttpInfo($warId, $datasource = 'tranquility', $page = '1', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetWarsWarIdKillmails200Ok[]';
         $request = $this->getWarsWarIdKillmailsRequest($warId, $datasource, $page, $userAgent, $xUserAgent);
 
         return $this->client

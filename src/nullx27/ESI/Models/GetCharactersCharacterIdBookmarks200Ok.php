@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdBookmarks200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,8 +65,8 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
         'notes' => 'string',
         'locationId' => 'int',
         'creatorId' => 'int',
-        'item' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksItem',
-        'coordinates' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksCoordinates'
+        'item' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksItem',
+        'coordinates' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksCoordinates'
     ];
 
     /**
@@ -461,7 +461,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Gets item
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksItem
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksItem
      */
     public function getItem()
     {
@@ -471,7 +471,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Sets item
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksItem $item item
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksItem $item item
      *
      * @return $this
      */
@@ -485,7 +485,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Gets coordinates
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksCoordinates
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksCoordinates
      */
     public function getCoordinates()
     {
@@ -495,7 +495,7 @@ class GetCharactersCharacterIdBookmarks200Ok implements ModelInterface, ArrayAcc
     /**
      * Sets coordinates
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksCoordinates $coordinates coordinates
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdBookmarksCoordinates $coordinates coordinates
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# nullx27ESI\UniverseApi
+# nullx27\ESI\UniverseApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -35,7 +35,7 @@ Method | HTTP request | Description
 
 
 # **getUniverseBloodlines**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseBloodlines200Ok[] getUniverseBloodlines($datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseBloodlines200Ok[] getUniverseBloodlines($datasource, $language, $userAgent, $xUserAgent)
 
 Get bloodlines
 
@@ -46,7 +46,7 @@ Get a list of bloodlines  --- Alternate route: `/dev/universe/bloodlines/`  Alte
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseBloodlines200Ok[]**](../Model/GetUniverseBloodlines200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseBloodlines200Ok[]**](../Model/GetUniverseBloodlines200Ok.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ Get a list of item categories  --- Alternate route: `/dev/universe/categories/` 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -143,7 +143,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseCategoriesCategoryId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseCategoriesCategoryIdOk getUniverseCategoriesCategoryId($categoryId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseCategoriesCategoryIdOk getUniverseCategoriesCategoryId($categoryId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get item category information
 
@@ -154,7 +154,7 @@ Get information of an item category  --- Alternate route: `/dev/universe/categor
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseCategoriesCategoryIdOk**](../Model/GetUniverseCategoriesCategoryIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseCategoriesCategoryIdOk**](../Model/GetUniverseCategoriesCategoryIdOk.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ Get a list of constellations  --- Alternate route: `/dev/universe/constellations
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -253,7 +253,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseConstellationsConstellationId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseConstellationsConstellationIdOk getUniverseConstellationsConstellationId($constellationId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseConstellationsConstellationIdOk getUniverseConstellationsConstellationId($constellationId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get constellation information
 
@@ -264,7 +264,7 @@ Get information on a constellation  --- Alternate route: `/dev/universe/constell
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseConstellationsConstellationIdOk**](../Model/GetUniverseConstellationsConstellationIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseConstellationsConstellationIdOk**](../Model/GetUniverseConstellationsConstellationIdOk.md)
 
 ### Authorization
 
@@ -310,7 +310,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseFactions**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseFactions200Ok[] getUniverseFactions($datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseFactions200Ok[] getUniverseFactions($datasource, $language, $userAgent, $xUserAgent)
 
 Get factions
 
@@ -321,7 +321,7 @@ Get a list of factions  --- Alternate route: `/dev/universe/factions/`  Alternat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseFactions200Ok[]**](../Model/GetUniverseFactions200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseFactions200Ok[]**](../Model/GetUniverseFactions200Ok.md)
 
 ### Authorization
 
@@ -376,7 +376,7 @@ Get a list of graphics  --- Alternate route: `/dev/universe/graphics/`  Alternat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -418,7 +418,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseGraphicsGraphicId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseGraphicsGraphicIdOk getUniverseGraphicsGraphicId($graphicId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseGraphicsGraphicIdOk getUniverseGraphicsGraphicId($graphicId, $datasource, $userAgent, $xUserAgent)
 
 Get graphic information
 
@@ -429,7 +429,7 @@ Get information on a graphic  --- Alternate route: `/dev/universe/graphics/{grap
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -459,7 +459,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseGraphicsGraphicIdOk**](../Model/GetUniverseGraphicsGraphicIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseGraphicsGraphicIdOk**](../Model/GetUniverseGraphicsGraphicIdOk.md)
 
 ### Authorization
 
@@ -484,7 +484,7 @@ Get a list of item groups  --- Alternate route: `/dev/universe/groups/`  Alterna
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -528,7 +528,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseGroupsGroupId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseGroupsGroupIdOk getUniverseGroupsGroupId($groupId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseGroupsGroupIdOk getUniverseGroupsGroupId($groupId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get item group information
 
@@ -539,7 +539,7 @@ Get information on an item group  --- Alternate route: `/dev/universe/groups/{gr
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -571,7 +571,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseGroupsGroupIdOk**](../Model/GetUniverseGroupsGroupIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseGroupsGroupIdOk**](../Model/GetUniverseGroupsGroupIdOk.md)
 
 ### Authorization
 
@@ -585,7 +585,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseMoonsMoonId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseMoonsMoonIdOk getUniverseMoonsMoonId($moonId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseMoonsMoonIdOk getUniverseMoonsMoonId($moonId, $datasource, $userAgent, $xUserAgent)
 
 Get moon information
 
@@ -596,7 +596,7 @@ Get information on a moon  --- Alternate route: `/dev/universe/moons/{moon_id}/`
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -626,7 +626,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseMoonsMoonIdOk**](../Model/GetUniverseMoonsMoonIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseMoonsMoonIdOk**](../Model/GetUniverseMoonsMoonIdOk.md)
 
 ### Authorization
 
@@ -640,7 +640,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniversePlanetsPlanetId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdOk getUniversePlanetsPlanetId($planetId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdOk getUniversePlanetsPlanetId($planetId, $datasource, $userAgent, $xUserAgent)
 
 Get planet information
 
@@ -651,7 +651,7 @@ Get information on a planet  --- Alternate route: `/dev/universe/planets/{planet
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -681,7 +681,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdOk**](../Model/GetUniversePlanetsPlanetIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniversePlanetsPlanetIdOk**](../Model/GetUniversePlanetsPlanetIdOk.md)
 
 ### Authorization
 
@@ -695,7 +695,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRaces**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseRaces200Ok[] getUniverseRaces($datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseRaces200Ok[] getUniverseRaces($datasource, $language, $userAgent, $xUserAgent)
 
 Get character races
 
@@ -706,7 +706,7 @@ Get a list of character races  --- Alternate route: `/dev/universe/races/`  Alte
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -736,7 +736,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseRaces200Ok[]**](../Model/GetUniverseRaces200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseRaces200Ok[]**](../Model/GetUniverseRaces200Ok.md)
 
 ### Authorization
 
@@ -761,7 +761,7 @@ Get a list of regions  --- Alternate route: `/dev/universe/regions/`  Alternate 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -803,7 +803,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseRegionsRegionId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseRegionsRegionIdOk getUniverseRegionsRegionId($regionId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseRegionsRegionIdOk getUniverseRegionsRegionId($regionId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get region information
 
@@ -814,7 +814,7 @@ Get information on a region  --- Alternate route: `/dev/universe/regions/{region
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -846,7 +846,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseRegionsRegionIdOk**](../Model/GetUniverseRegionsRegionIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseRegionsRegionIdOk**](../Model/GetUniverseRegionsRegionIdOk.md)
 
 ### Authorization
 
@@ -860,7 +860,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStargatesStargateId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdOk getUniverseStargatesStargateId($stargateId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdOk getUniverseStargatesStargateId($stargateId, $datasource, $userAgent, $xUserAgent)
 
 Get stargate information
 
@@ -871,7 +871,7 @@ Get information on a stargate  --- Alternate route: `/dev/universe/stargates/{st
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -901,7 +901,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdOk**](../Model/GetUniverseStargatesStargateIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdOk**](../Model/GetUniverseStargatesStargateIdOk.md)
 
 ### Authorization
 
@@ -915,7 +915,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStarsStarId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseStarsStarIdOk getUniverseStarsStarId($starId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseStarsStarIdOk getUniverseStarsStarId($starId, $datasource, $userAgent, $xUserAgent)
 
 Get star information
 
@@ -926,7 +926,7 @@ Get information on a star  --- Alternate route: `/dev/universe/stars/{star_id}/`
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -956,7 +956,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseStarsStarIdOk**](../Model/GetUniverseStarsStarIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseStarsStarIdOk**](../Model/GetUniverseStarsStarIdOk.md)
 
 ### Authorization
 
@@ -970,7 +970,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStationsStationId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseStationsStationIdOk getUniverseStationsStationId($stationId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseStationsStationIdOk getUniverseStationsStationId($stationId, $datasource, $userAgent, $xUserAgent)
 
 Get station information
 
@@ -981,7 +981,7 @@ Get information on a station  --- Alternate route: `/dev/universe/stations/{stat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1011,7 +1011,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseStationsStationIdOk**](../Model/GetUniverseStationsStationIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseStationsStationIdOk**](../Model/GetUniverseStationsStationIdOk.md)
 
 ### Authorization
 
@@ -1036,7 +1036,7 @@ List all public structures  --- Alternate route: `/dev/universe/structures/`  Al
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1078,7 +1078,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseStructuresStructureId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseStructuresStructureIdOk getUniverseStructuresStructureId($structureId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseStructuresStructureIdOk getUniverseStructuresStructureId($structureId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get structure information
 
@@ -1090,9 +1090,9 @@ Returns information on requested structure, if you are on the ACL. Otherwise, re
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1125,7 +1125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseStructuresStructureIdOk**](../Model/GetUniverseStructuresStructureIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseStructuresStructureIdOk**](../Model/GetUniverseStructuresStructureIdOk.md)
 
 ### Authorization
 
@@ -1139,7 +1139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemJumps**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseSystemJumps200Ok[] getUniverseSystemJumps($datasource, $userAgent, $xUserAgent)
 
 Get system jumps
 
@@ -1150,7 +1150,7 @@ Get the number of jumps in solar systems within the last hour ending at the time
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1178,7 +1178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseSystemJumps200Ok[]**](../Model/GetUniverseSystemJumps200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseSystemJumps200Ok[]**](../Model/GetUniverseSystemJumps200Ok.md)
 
 ### Authorization
 
@@ -1192,7 +1192,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemKills**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseSystemKills200Ok[] getUniverseSystemKills($datasource, $userAgent, $xUserAgent)
 
 Get system kills
 
@@ -1203,7 +1203,7 @@ Get the number of ship, pod and NPC kills per solar system within the last hour 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1231,7 +1231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseSystemKills200Ok[]**](../Model/GetUniverseSystemKills200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseSystemKills200Ok[]**](../Model/GetUniverseSystemKills200Ok.md)
 
 ### Authorization
 
@@ -1256,7 +1256,7 @@ Get a list of solar systems  --- Alternate route: `/dev/universe/systems/`  Alte
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1298,7 +1298,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseSystemsSystemId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseSystemsSystemIdOk getUniverseSystemsSystemId($systemId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseSystemsSystemIdOk getUniverseSystemsSystemId($systemId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get solar system information
 
@@ -1309,7 +1309,7 @@ Get information on a solar system  --- Alternate route: `/dev/universe/systems/{
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1341,7 +1341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseSystemsSystemIdOk**](../Model/GetUniverseSystemsSystemIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseSystemsSystemIdOk**](../Model/GetUniverseSystemsSystemIdOk.md)
 
 ### Authorization
 
@@ -1366,7 +1366,7 @@ Get a list of type ids  --- Alternate route: `/dev/universe/types/`  Alternate r
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1410,7 +1410,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUniverseTypesTypeId**
-> \nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdOk getUniverseTypesTypeId($typeId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdOk getUniverseTypesTypeId($typeId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get type information
 
@@ -1421,7 +1421,7 @@ Get information on a type  --- Alternate route: `/dev/universe/types/{type_id}/`
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1453,7 +1453,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdOk**](../Model/GetUniverseTypesTypeIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdOk**](../Model/GetUniverseTypesTypeIdOk.md)
 
 ### Authorization
 
@@ -1467,7 +1467,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseIds**
-> \nullx27ESI\nullx27\ESI\Models\PostUniverseIdsOk postUniverseIds($names, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsOk postUniverseIds($names, $datasource, $language, $userAgent, $xUserAgent)
 
 Bulk names to IDs
 
@@ -1478,12 +1478,12 @@ Resolve a set of names to IDs in the following categories: agents, alliances, ch
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$names = array(new \nullx27ESI\nullx27\ESI\Models\string[]()); // string[] | The names to resolve
+$names = array(new \nullx27\ESI\nullx27\ESI\Models\string[]()); // string[] | The names to resolve
 $datasource = "tranquility"; // string | The server name you would like data from
 $language = "en-us"; // string | Language to use in the response
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -1510,7 +1510,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostUniverseIdsOk**](../Model/PostUniverseIdsOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostUniverseIdsOk**](../Model/PostUniverseIdsOk.md)
 
 ### Authorization
 
@@ -1524,7 +1524,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postUniverseNames**
-> \nullx27ESI\nullx27\ESI\Models\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostUniverseNames200Ok[] postUniverseNames($ids, $datasource, $userAgent, $xUserAgent)
 
 Get names and categories for a set of ID's
 
@@ -1535,12 +1535,12 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\UniverseApi(
+$apiInstance = new nullx27\ESI\Api\UniverseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$ids = array(new \nullx27ESI\nullx27\ESI\Models\int[]()); // int[] | The ids to resolve
+$ids = array(new \nullx27\ESI\nullx27\ESI\Models\int[]()); // int[] | The ids to resolve
 $datasource = "tranquility"; // string | The server name you would like data from
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
@@ -1565,7 +1565,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostUniverseNames200Ok[]**](../Model/PostUniverseNames200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostUniverseNames200Ok[]**](../Model/PostUniverseNames200Ok.md)
 
 ### Authorization
 

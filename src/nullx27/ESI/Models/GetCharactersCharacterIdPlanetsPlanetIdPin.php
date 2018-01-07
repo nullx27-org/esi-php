@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdPlanetsPlanetIdPin Class Doc Comment
  *
  * @category Class
  * @description pin object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,9 +63,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
         'pinId' => 'int',
         'typeId' => 'int',
         'schematicId' => 'int',
-        'extractorDetails' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails',
-        'factoryDetails' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails',
-        'contents' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdContent[]',
+        'extractorDetails' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails',
+        'factoryDetails' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails',
+        'contents' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdContent[]',
         'installTime' => '\DateTime',
         'expiryTime' => '\DateTime',
         'lastCycleStart' => '\DateTime'
@@ -413,7 +413,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Gets extractorDetails
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails
      */
     public function getExtractorDetails()
     {
@@ -423,7 +423,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Sets extractorDetails
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails $extractorDetails extractorDetails
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails $extractorDetails extractorDetails
      *
      * @return $this
      */
@@ -437,7 +437,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Gets factoryDetails
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails
      */
     public function getFactoryDetails()
     {
@@ -447,7 +447,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Sets factoryDetails
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails $factoryDetails factoryDetails
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails $factoryDetails factoryDetails
      *
      * @return $this
      */
@@ -461,7 +461,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Gets contents
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdContent[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdContent[]
      */
     public function getContents()
     {
@@ -471,7 +471,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdPin implements ModelInterface, Arra
     /**
      * Sets contents
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdContent[] $contents contents array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdContent[] $contents contents array
      *
      * @return $this
      */

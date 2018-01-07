@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * MailApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -115,7 +115,7 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,7 +159,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -167,7 +167,7 @@ class MailApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -406,7 +406,7 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -427,7 +427,7 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -471,7 +471,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -479,7 +479,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -711,9 +711,9 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]
      */
     public function getCharactersCharacterIdMail($characterId, $datasource = 'tranquility', $labels = null, $lastMailId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -734,13 +734,13 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdMailWithHttpInfo($characterId, $datasource = 'tranquility', $labels = null, $lastMailId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]';
         $request = $this->getCharactersCharacterIdMailRequest($characterId, $datasource, $labels, $lastMailId, $token, $userAgent, $xUserAgent);
 
         try {
@@ -792,7 +792,7 @@ class MailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -800,7 +800,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -808,7 +808,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -862,7 +862,7 @@ class MailApi
      */
     public function getCharactersCharacterIdMailAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $labels = null, $lastMailId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMail200Ok[]';
         $request = $this->getCharactersCharacterIdMailRequest($characterId, $datasource, $labels, $lastMailId, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1059,9 +1059,9 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk
      */
     public function getCharactersCharacterIdMailLabels($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1080,13 +1080,13 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdMailLabelsWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk';
         $request = $this->getCharactersCharacterIdMailLabelsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1138,7 +1138,7 @@ class MailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1146,7 +1146,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1154,7 +1154,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class MailApi
      */
     public function getCharactersCharacterIdMailLabelsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLabelsOk';
         $request = $this->getCharactersCharacterIdMailLabelsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1381,9 +1381,9 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]
      */
     public function getCharactersCharacterIdMailLists($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1402,13 +1402,13 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdMailListsWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]';
         $request = $this->getCharactersCharacterIdMailListsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1460,7 +1460,7 @@ class MailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1468,7 +1468,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1476,7 +1476,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1526,7 +1526,7 @@ class MailApi
      */
     public function getCharactersCharacterIdMailListsAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailLists200Ok[]';
         $request = $this->getCharactersCharacterIdMailListsRequest($characterId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -1704,9 +1704,9 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk
      */
     public function getCharactersCharacterIdMailMailId($characterId, $mailId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -1726,13 +1726,13 @@ class MailApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdMailMailIdWithHttpInfo($characterId, $mailId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk';
         $request = $this->getCharactersCharacterIdMailMailIdRequest($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent);
 
         try {
@@ -1784,7 +1784,7 @@ class MailApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1792,7 +1792,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1800,7 +1800,7 @@ class MailApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdNotFound',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdNotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1808,7 +1808,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1860,7 +1860,7 @@ class MailApi
      */
     public function getCharactersCharacterIdMailMailIdAsyncWithHttpInfo($characterId, $mailId, $datasource = 'tranquility', $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdMailMailIdOk';
         $request = $this->getCharactersCharacterIdMailMailIdRequest($characterId, $mailId, $datasource, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -2047,13 +2047,13 @@ class MailApi
      * Send a new mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int
      */
@@ -2069,13 +2069,13 @@ class MailApi
      * Send a new mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2141,7 +2141,7 @@ class MailApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailBadRequest',
+                        '\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailBadRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2149,7 +2149,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2157,7 +2157,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2173,7 +2173,7 @@ class MailApi
      * Send a new mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -2198,7 +2198,7 @@ class MailApi
      * Send a new mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -2253,7 +2253,7 @@ class MailApi
      * Create request for operation 'postCharactersCharacterIdMail'
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailMail $mail The mail to send (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
@@ -2392,12 +2392,12 @@ class MailApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return int
      */
@@ -2414,12 +2414,12 @@ class MailApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of int, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2485,7 +2485,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2493,7 +2493,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2510,7 +2510,7 @@ class MailApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
@@ -2535,7 +2535,7 @@ class MailApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
@@ -2590,7 +2590,7 @@ class MailApi
      *
      * @param  int $characterId An EVE character ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdMailLabelsLabel $label Label to create (optional)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
@@ -2721,14 +2721,14 @@ class MailApi
      * Update metadata about a mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
      * @param  int $mailId An EVE mail ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2743,14 +2743,14 @@ class MailApi
      * Update metadata about a mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
      * @param  int $mailId An EVE mail ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2794,7 +2794,7 @@ class MailApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdBadRequest',
+                        '\nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdBadRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2802,7 +2802,7 @@ class MailApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2810,7 +2810,7 @@ class MailApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2826,7 +2826,7 @@ class MailApi
      * Update metadata about a mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
      * @param  int $mailId An EVE mail ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -2852,7 +2852,7 @@ class MailApi
      * Update metadata about a mail
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
      * @param  int $mailId An EVE mail ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)
@@ -2894,7 +2894,7 @@ class MailApi
      * Create request for operation 'putCharactersCharacterIdMailMailId'
      *
      * @param  int $characterId An EVE character ID (required)
-     * @param  \nullx27ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
+     * @param  \nullx27\ESI\nullx27\ESI\Models\PutCharactersCharacterIdMailMailIdContents $contents Data used to update the mail (required)
      * @param  int $mailId An EVE mail ID (required)
      * @param  string $datasource The server name you would like data from (optional, default to tranquility)
      * @param  string $token Access token to use if unable to set a header (optional)

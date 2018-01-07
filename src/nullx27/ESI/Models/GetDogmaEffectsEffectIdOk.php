@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetDogmaEffectsEffectIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -78,7 +78,7 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess
         'dischargeAttributeId' => 'int',
         'rangeAttributeId' => 'int',
         'falloffAttributeId' => 'int',
-        'modifiers' => '\nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[]'
+        'modifiers' => '\nullx27\ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[]'
     ];
 
     /**
@@ -815,7 +815,7 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets modifiers
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[]
      */
     public function getModifiers()
     {
@@ -825,7 +825,7 @@ class GetDogmaEffectsEffectIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets modifiers
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[] $modifiers modifiers array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdModifier[] $modifiers modifiers array
      *
      * @return $this
      */

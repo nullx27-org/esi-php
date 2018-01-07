@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * PostCorporationsCorporationIdAssetsLocations200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PostCorporationsCorporationIdAssetsLocations200Ok implements ModelInterfac
       */
     protected static $swaggerTypes = [
         'itemId' => 'int',
-        'position' => '\nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocationsPosition'
+        'position' => '\nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocationsPosition'
     ];
 
     /**
@@ -251,7 +251,7 @@ class PostCorporationsCorporationIdAssetsLocations200Ok implements ModelInterfac
     /**
      * Gets position
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocationsPosition
+     * @return \nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocationsPosition
      */
     public function getPosition()
     {
@@ -261,7 +261,7 @@ class PostCorporationsCorporationIdAssetsLocations200Ok implements ModelInterfac
     /**
      * Sets position
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocationsPosition $position position
+     * @param \nullx27\ESI\nullx27\ESI\Models\PostCorporationsCorporationIdAssetsLocationsPosition $position position
      *
      * @return $this
      */

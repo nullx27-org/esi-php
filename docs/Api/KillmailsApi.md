@@ -1,4 +1,4 @@
-# nullx27ESI\KillmailsApi
+# nullx27\ESI\KillmailsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdKillmailsRecent**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[] getCharactersCharacterIdKillmailsRecent($characterId, $datasource, $maxCount, $maxKillId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[] getCharactersCharacterIdKillmailsRecent($characterId, $datasource, $maxCount, $maxKillId, $token, $userAgent, $xUserAgent)
 
 Get character kills and losses
 
@@ -22,9 +22,9 @@ Return a list of character's recent kills and losses  --- Alternate route: `/dev
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\KillmailsApi(
+$apiInstance = new nullx27\ESI\Api\KillmailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]**](../Model/GetCharactersCharacterIdKillmailsRecent200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]**](../Model/GetCharactersCharacterIdKillmailsRecent200Ok.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCorporationsCorporationIdKillmailsRecent**
-> \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[] getCorporationsCorporationIdKillmailsRecent($corporationId, $datasource, $maxKillId, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[] getCorporationsCorporationIdKillmailsRecent($corporationId, $datasource, $maxKillId, $token, $userAgent, $xUserAgent)
 
 Get corporation kills and losses
 
@@ -87,9 +87,9 @@ Get a list of corporation's recent kills and losses  --- Alternate route: `/dev/
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\KillmailsApi(
+$apiInstance = new nullx27\ESI\Api\KillmailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]**](../Model/GetCorporationsCorporationIdKillmailsRecent200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]**](../Model/GetCorporationsCorporationIdKillmailsRecent200Ok.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getKillmailsKillmailIdKillmailHash**
-> \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk getKillmailsKillmailIdKillmailHash($killmailHash, $killmailId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk getKillmailsKillmailIdKillmailHash($killmailHash, $killmailId, $datasource, $userAgent, $xUserAgent)
 
 Get a single killmail
 
@@ -149,7 +149,7 @@ Return a single killmail from its ID and hash  --- Alternate route: `/dev/killma
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\KillmailsApi(
+$apiInstance = new nullx27\ESI\Api\KillmailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk**](../Model/GetKillmailsKillmailIdKillmailHashOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk**](../Model/GetKillmailsKillmailIdKillmailHashOk.md)
 
 ### Authorization
 

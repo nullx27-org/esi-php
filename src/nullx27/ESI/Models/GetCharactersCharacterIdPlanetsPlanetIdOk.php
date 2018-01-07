@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdPlanetsPlanetIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdLink[]',
-        'pins' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdPin[]',
-        'routes' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdRoute[]'
+        'links' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdLink[]',
+        'pins' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdPin[]',
+        'routes' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdRoute[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Gets links
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdLink[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdLink[]
      */
     public function getLinks()
     {
@@ -249,7 +249,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Sets links
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdLink[] $links links array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdLink[] $links links array
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Gets pins
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdPin[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdPin[]
      */
     public function getPins()
     {
@@ -273,7 +273,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Sets pins
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdPin[] $pins pins array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdPin[] $pins pins array
      *
      * @return $this
      */
@@ -287,7 +287,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Gets routes
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdRoute[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdRoute[]
      */
     public function getRoutes()
     {
@@ -297,7 +297,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdOk implements ModelInterface, Array
     /**
      * Sets routes
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdRoute[] $routes routes array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdRoute[] $routes routes array
      *
      * @return $this
      */

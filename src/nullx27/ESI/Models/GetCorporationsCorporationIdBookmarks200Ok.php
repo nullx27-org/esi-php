@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCorporationsCorporationIdBookmarks200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,8 +65,8 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
         'label' => 'string',
         'notes' => 'string',
         'locationId' => 'int',
-        'item' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem',
-        'coordinates' => '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates'
+        'item' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem',
+        'coordinates' => '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates'
     ];
 
     /**
@@ -461,7 +461,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Gets item
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem
      */
     public function getItem()
     {
@@ -471,7 +471,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Sets item
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem $item item
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem $item item
      *
      * @return $this
      */
@@ -485,7 +485,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Gets coordinates
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates
      */
     public function getCoordinates()
     {
@@ -495,7 +495,7 @@ class GetCorporationsCorporationIdBookmarks200Ok implements ModelInterface, Arra
     /**
      * Sets coordinates
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates $coordinates coordinates
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates $coordinates coordinates
      *
      * @return $this
      */

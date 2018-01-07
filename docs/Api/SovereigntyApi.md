@@ -1,4 +1,4 @@
-# nullx27ESI\SovereigntyApi
+# nullx27\ESI\SovereigntyApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getSovereigntyCampaigns**
-> \nullx27ESI\nullx27\ESI\Models\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $userAgent, $xUserAgent)
 
 List sovereignty campaigns
 
@@ -21,7 +21,7 @@ Shows sovereignty data for campaigns.  --- Alternate route: `/dev/sovereignty/ca
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\SovereigntyApi(
+$apiInstance = new nullx27\ESI\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetSovereigntyCampaigns200Ok[]**](../Model/GetSovereigntyCampaigns200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetSovereigntyCampaigns200Ok[]**](../Model/GetSovereigntyCampaigns200Ok.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSovereigntyMap**
-> \nullx27ESI\nullx27\ESI\Models\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $userAgent, $xUserAgent)
 
 List sovereignty of systems
 
@@ -74,7 +74,7 @@ Shows sovereignty information for solar systems  --- Alternate route: `/dev/sove
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\SovereigntyApi(
+$apiInstance = new nullx27\ESI\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetSovereigntyMap200Ok[]**](../Model/GetSovereigntyMap200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetSovereigntyMap200Ok[]**](../Model/GetSovereigntyMap200Ok.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSovereigntyStructures**
-> \nullx27ESI\nullx27\ESI\Models\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $userAgent, $xUserAgent)
 
 List sovereignty structures
 
@@ -127,7 +127,7 @@ Shows sovereignty data for structures.  --- Alternate route: `/dev/sovereignty/s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\SovereigntyApi(
+$apiInstance = new nullx27\ESI\Api\SovereigntyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetSovereigntyStructures200Ok[]**](../Model/GetSovereigntyStructures200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetSovereigntyStructures200Ok[]**](../Model/GetSovereigntyStructures200Ok.md)
 
 ### Authorization
 

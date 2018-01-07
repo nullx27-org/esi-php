@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Api;
+namespace nullx27\ESI\nullx27\ESI\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use nullx27ESI\ApiException;
-use nullx27ESI\Configuration;
-use nullx27ESI\HeaderSelector;
-use nullx27ESI\ObjectSerializer;
+use nullx27\ESI\ApiException;
+use nullx27\ESI\Configuration;
+use nullx27\ESI\HeaderSelector;
+use nullx27\ESI\ObjectSerializer;
 
 /**
  * KillmailsApi Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class KillmailsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]
      */
     public function getCharactersCharacterIdKillmailsRecent($characterId, $datasource = 'tranquility', $maxCount = '50', $maxKillId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -118,13 +118,13 @@ class KillmailsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCharactersCharacterIdKillmailsRecentWithHttpInfo($characterId, $datasource = 'tranquility', $maxCount = '50', $maxKillId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]';
         $request = $this->getCharactersCharacterIdKillmailsRecentRequest($characterId, $datasource, $maxCount, $maxKillId, $token, $userAgent, $xUserAgent);
 
         try {
@@ -176,7 +176,7 @@ class KillmailsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class KillmailsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class KillmailsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -246,7 +246,7 @@ class KillmailsApi
      */
     public function getCharactersCharacterIdKillmailsRecentAsyncWithHttpInfo($characterId, $datasource = 'tranquility', $maxCount = '50', $maxKillId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdKillmailsRecent200Ok[]';
         $request = $this->getCharactersCharacterIdKillmailsRecentRequest($characterId, $datasource, $maxCount, $maxKillId, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -438,9 +438,9 @@ class KillmailsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]
      */
     public function getCorporationsCorporationIdKillmailsRecent($corporationId, $datasource = 'tranquility', $maxKillId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
@@ -460,13 +460,13 @@ class KillmailsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCorporationsCorporationIdKillmailsRecentWithHttpInfo($corporationId, $datasource = 'tranquility', $maxKillId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
         $request = $this->getCorporationsCorporationIdKillmailsRecentRequest($corporationId, $datasource, $maxKillId, $token, $userAgent, $xUserAgent);
 
         try {
@@ -518,7 +518,7 @@ class KillmailsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class KillmailsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\Forbidden',
+                        '\nullx27\ESI\nullx27\ESI\Models\Forbidden',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -534,7 +534,7 @@ class KillmailsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -586,7 +586,7 @@ class KillmailsApi
      */
     public function getCorporationsCorporationIdKillmailsRecentAsyncWithHttpInfo($corporationId, $datasource = 'tranquility', $maxKillId = null, $token = null, $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdKillmailsRecent200Ok[]';
         $request = $this->getCorporationsCorporationIdKillmailsRecentRequest($corporationId, $datasource, $maxKillId, $token, $userAgent, $xUserAgent);
 
         return $this->client
@@ -768,9 +768,9 @@ class KillmailsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk
      */
     public function getKillmailsKillmailIdKillmailHash($killmailHash, $killmailId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
@@ -789,13 +789,13 @@ class KillmailsApi
      * @param  string $userAgent Client identifier, takes precedence over headers (optional)
      * @param  string $xUserAgent Client identifier, takes precedence over User-Agent (optional)
      *
-     * @throws \nullx27ESI\ApiException on non-2xx response
+     * @throws \nullx27\ESI\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk, HTTP status code, HTTP response headers (array of strings)
      */
     public function getKillmailsKillmailIdKillmailHashWithHttpInfo($killmailHash, $killmailId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk';
         $request = $this->getKillmailsKillmailIdKillmailHashRequest($killmailHash, $killmailId, $datasource, $userAgent, $xUserAgent);
 
         try {
@@ -847,7 +847,7 @@ class KillmailsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -855,7 +855,7 @@ class KillmailsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashUnprocessableEntity',
+                        '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashUnprocessableEntity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -863,7 +863,7 @@ class KillmailsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\nullx27ESI\nullx27\ESI\Models\InternalServerError',
+                        '\nullx27\ESI\nullx27\ESI\Models\InternalServerError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -913,7 +913,7 @@ class KillmailsApi
      */
     public function getKillmailsKillmailIdKillmailHashAsyncWithHttpInfo($killmailHash, $killmailId, $datasource = 'tranquility', $userAgent = null, $xUserAgent = null)
     {
-        $returnType = '\nullx27ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk';
+        $returnType = '\nullx27\ESI\nullx27\ESI\Models\GetKillmailsKillmailIdKillmailHashOk';
         $request = $this->getKillmailsKillmailIdKillmailHashRequest($killmailHash, $killmailId, $datasource, $userAgent, $xUserAgent);
 
         return $this->client

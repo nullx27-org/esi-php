@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **label** | **string** | label string | 
 **notes** | **string** | notes string | 
 **locationId** | **int** | location_id integer | 
-**item** | [**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem**](GetCorporationsCorporationIdBookmarksItem.md) |  | [optional] 
-**coordinates** | [**\nullx27ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates**](GetCorporationsCorporationIdBookmarksCoordinates.md) |  | [optional] 
+**item** | [**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksItem**](GetCorporationsCorporationIdBookmarksItem.md) |  | [optional] 
+**coordinates** | [**\nullx27\ESI\nullx27\ESI\Models\GetCorporationsCorporationIdBookmarksCoordinates**](GetCorporationsCorporationIdBookmarksCoordinates.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

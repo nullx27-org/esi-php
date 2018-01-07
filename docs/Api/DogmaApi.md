@@ -1,4 +1,4 @@
-# nullx27ESI\DogmaApi
+# nullx27\ESI\DogmaApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -22,7 +22,7 @@ Get a list of dogma attribute ids  --- Alternate route: `/dev/dogma/attributes/`
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\DogmaApi(
+$apiInstance = new nullx27\ESI\Api\DogmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -64,7 +64,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDogmaAttributesAttributeId**
-> \nullx27ESI\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk getDogmaAttributesAttributeId($attributeId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk getDogmaAttributesAttributeId($attributeId, $datasource, $userAgent, $xUserAgent)
 
 Get attribute information
 
@@ -75,7 +75,7 @@ Get information on a dogma attribute  --- Alternate route: `/dev/dogma/attribute
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\DogmaApi(
+$apiInstance = new nullx27\ESI\Api\DogmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk**](../Model/GetDogmaAttributesAttributeIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetDogmaAttributesAttributeIdOk**](../Model/GetDogmaAttributesAttributeIdOk.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ Get a list of dogma effect ids  --- Alternate route: `/dev/dogma/effects/`  Alte
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\DogmaApi(
+$apiInstance = new nullx27\ESI\Api\DogmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -172,7 +172,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDogmaEffectsEffectId**
-> \nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk getDogmaEffectsEffectId($effectId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk getDogmaEffectsEffectId($effectId, $datasource, $userAgent, $xUserAgent)
 
 Get effect information
 
@@ -183,7 +183,7 @@ Get information on a dogma effect  --- Alternate route: `/dev/dogma/effects/{eff
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\DogmaApi(
+$apiInstance = new nullx27\ESI\Api\DogmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk**](../Model/GetDogmaEffectsEffectIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetDogmaEffectsEffectIdOk**](../Model/GetDogmaEffectsEffectIdOk.md)
 
 ### Authorization
 

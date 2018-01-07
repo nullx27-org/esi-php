@@ -1,4 +1,4 @@
-# nullx27ESI\OpportunitiesApi
+# nullx27\ESI\OpportunitiesApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **getCharactersCharacterIdOpportunities**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOpportunities200Ok[] getCharactersCharacterIdOpportunities($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOpportunities200Ok[] getCharactersCharacterIdOpportunities($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get a character's completed tasks
 
@@ -24,9 +24,9 @@ Return a list of tasks finished by a character  --- Alternate route: `/dev/chara
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\OpportunitiesApi(
+$apiInstance = new nullx27\ESI\Api\OpportunitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdOpportunities200Ok[]**](../Model/GetCharactersCharacterIdOpportunities200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdOpportunities200Ok[]**](../Model/GetCharactersCharacterIdOpportunities200Ok.md)
 
 ### Authorization
 
@@ -84,7 +84,7 @@ Return a list of opportunities groups  --- Alternate route: `/dev/opportunities/
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\OpportunitiesApi(
+$apiInstance = new nullx27\ESI\Api\OpportunitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -126,7 +126,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOpportunitiesGroupsGroupId**
-> \nullx27ESI\nullx27\ESI\Models\GetOpportunitiesGroupsGroupIdOk getOpportunitiesGroupsGroupId($groupId, $datasource, $language, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetOpportunitiesGroupsGroupIdOk getOpportunitiesGroupsGroupId($groupId, $datasource, $language, $userAgent, $xUserAgent)
 
 Get opportunities group
 
@@ -137,7 +137,7 @@ Return information of an opportunities group  --- Alternate route: `/dev/opportu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\OpportunitiesApi(
+$apiInstance = new nullx27\ESI\Api\OpportunitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetOpportunitiesGroupsGroupIdOk**](../Model/GetOpportunitiesGroupsGroupIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetOpportunitiesGroupsGroupIdOk**](../Model/GetOpportunitiesGroupsGroupIdOk.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Return a list of opportunities tasks  --- Alternate route: `/dev/opportunities/t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\OpportunitiesApi(
+$apiInstance = new nullx27\ESI\Api\OpportunitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -236,7 +236,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOpportunitiesTasksTaskId**
-> \nullx27ESI\nullx27\ESI\Models\GetOpportunitiesTasksTaskIdOk getOpportunitiesTasksTaskId($taskId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetOpportunitiesTasksTaskIdOk getOpportunitiesTasksTaskId($taskId, $datasource, $userAgent, $xUserAgent)
 
 Get opportunities task
 
@@ -247,7 +247,7 @@ Return information of an opportunities task  --- Alternate route: `/dev/opportun
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\OpportunitiesApi(
+$apiInstance = new nullx27\ESI\Api\OpportunitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetOpportunitiesTasksTaskIdOk**](../Model/GetOpportunitiesTasksTaskIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetOpportunitiesTasksTaskIdOk**](../Model/GetOpportunitiesTasksTaskIdOk.md)
 
 ### Authorization
 

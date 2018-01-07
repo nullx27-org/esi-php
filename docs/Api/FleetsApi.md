@@ -1,4 +1,4 @@
-# nullx27ESI\FleetsApi
+# nullx27\ESI\FleetsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -33,9 +33,9 @@ Kick a fleet member  --- Alternate route: `/dev/fleets/{fleet_id}/members/{membe
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -95,9 +95,9 @@ Delete a fleet squad, only empty squads can be deleted  --- Alternate route: `/d
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -157,9 +157,9 @@ Delete a fleet wing, only empty wings can be deleted. The wing may contain squad
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -207,7 +207,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdFleet**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk getCharactersCharacterIdFleet($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk getCharactersCharacterIdFleet($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get character fleet info
 
@@ -219,9 +219,9 @@ Return the fleet ID the character is in, if any.  --- Alternate route: `/dev/cha
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk**](../Model/GetCharactersCharacterIdFleetOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFleetOk**](../Model/GetCharactersCharacterIdFleetOk.md)
 
 ### Authorization
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFleetsFleetId**
-> \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk getFleetsFleetId($fleetId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk getFleetsFleetId($fleetId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get fleet information
 
@@ -280,9 +280,9 @@ Return details about a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/`  Al
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdOk**](../Model/GetFleetsFleetIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdOk**](../Model/GetFleetsFleetIdOk.md)
 
 ### Authorization
 
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFleetsFleetIdMembers**
-> \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[] getFleetsFleetIdMembers($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[] getFleetsFleetIdMembers($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent)
 
 Get fleet members
 
@@ -341,9 +341,9 @@ Return information about fleet members  --- Alternate route: `/dev/fleets/{fleet
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]**](../Model/GetFleetsFleetIdMembers200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdMembers200Ok[]**](../Model/GetFleetsFleetIdMembers200Ok.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFleetsFleetIdWings**
-> \nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[] getFleetsFleetIdWings($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[] getFleetsFleetIdWings($fleetId, $datasource, $language, $token, $userAgent, $xUserAgent)
 
 Get fleet wings
 
@@ -404,9 +404,9 @@ Return information about wings in a fleet  --- Alternate route: `/dev/fleets/{fl
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]**](../Model/GetFleetsFleetIdWings200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetFleetsFleetIdWings200Ok[]**](../Model/GetFleetsFleetIdWings200Ok.md)
 
 ### Authorization
 
@@ -467,16 +467,16 @@ Invite a character into the fleet. If a character has a CSPA charge set it is no
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $fleetId = 789; // int | ID for a fleet
-$invitation = new \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation(); // \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation | Details of the invitation
+$invitation = new \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation(); // \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation | Details of the invitation
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -495,7 +495,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleetId** | **int**| ID for a fleet |
- **invitation** | [**\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation**](../Model/PostFleetsFleetIdMembersInvitation.md)| Details of the invitation |
+ **invitation** | [**\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdMembersInvitation**](../Model/PostFleetsFleetIdMembersInvitation.md)| Details of the invitation |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
@@ -517,7 +517,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postFleetsFleetIdWings**
-> \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated postFleetsFleetIdWings($fleetId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated postFleetsFleetIdWings($fleetId, $datasource, $token, $userAgent, $xUserAgent)
 
 Create fleet wing
 
@@ -529,9 +529,9 @@ Create a new wing in a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/wings
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -564,7 +564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated**](../Model/PostFleetsFleetIdWingsCreated.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsCreated**](../Model/PostFleetsFleetIdWingsCreated.md)
 
 ### Authorization
 
@@ -578,7 +578,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postFleetsFleetIdWingsWingIdSquads**
-> \nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated postFleetsFleetIdWingsWingIdSquads($fleetId, $wingId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated postFleetsFleetIdWingsWingIdSquads($fleetId, $wingId, $datasource, $token, $userAgent, $xUserAgent)
 
 Create fleet squad
 
@@ -590,9 +590,9 @@ Create a new squad in a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/wing
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -627,7 +627,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated**](../Model/PostFleetsFleetIdWingsWingIdSquadsCreated.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostFleetsFleetIdWingsWingIdSquadsCreated**](../Model/PostFleetsFleetIdWingsWingIdSquadsCreated.md)
 
 ### Authorization
 
@@ -653,16 +653,16 @@ Update settings about a fleet  --- Alternate route: `/dev/fleets/{fleet_id}/`  A
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $fleetId = 789; // int | ID for a fleet
-$newSettings = new \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings(); // \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings | What to update for this fleet
+$newSettings = new \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings(); // \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings | What to update for this fleet
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -681,7 +681,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleetId** | **int**| ID for a fleet |
- **newSettings** | [**\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings**](../Model/PutFleetsFleetIdNewSettings.md)| What to update for this fleet |
+ **newSettings** | [**\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdNewSettings**](../Model/PutFleetsFleetIdNewSettings.md)| What to update for this fleet |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
@@ -715,9 +715,9 @@ Move a fleet member around  --- Alternate route: `/dev/fleets/{fleet_id}/members
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -725,7 +725,7 @@ $apiInstance = new nullx27ESI\Api\FleetsApi(
 );
 $fleetId = 789; // int | ID for a fleet
 $memberId = 56; // int | The character ID of a member in this fleet
-$movement = new \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement(); // \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement | Details of the invitation
+$movement = new \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement(); // \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement | Details of the invitation
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
@@ -745,7 +745,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleetId** | **int**| ID for a fleet |
  **memberId** | **int**| The character ID of a member in this fleet |
- **movement** | [**\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement**](../Model/PutFleetsFleetIdMembersMemberIdMovement.md)| Details of the invitation |
+ **movement** | [**\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdMembersMemberIdMovement**](../Model/PutFleetsFleetIdMembersMemberIdMovement.md)| Details of the invitation |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
@@ -779,16 +779,16 @@ Rename a fleet squad  --- Alternate route: `/dev/fleets/{fleet_id}/squads/{squad
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $fleetId = 789; // int | ID for a fleet
-$naming = new \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming(); // \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming | New name of the squad
+$naming = new \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming(); // \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming | New name of the squad
 $squadId = 789; // int | The squad to rename
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
@@ -808,7 +808,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleetId** | **int**| ID for a fleet |
- **naming** | [**\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming**](../Model/PutFleetsFleetIdSquadsSquadIdNaming.md)| New name of the squad |
+ **naming** | [**\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdSquadsSquadIdNaming**](../Model/PutFleetsFleetIdSquadsSquadIdNaming.md)| New name of the squad |
  **squadId** | **int**| The squad to rename |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]
@@ -843,16 +843,16 @@ Rename a fleet wing  --- Alternate route: `/dev/fleets/{fleet_id}/wings/{wing_id
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FleetsApi(
+$apiInstance = new nullx27\ESI\Api\FleetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $fleetId = 789; // int | ID for a fleet
-$naming = new \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming(); // \nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming | New name of the wing
+$naming = new \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming(); // \nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming | New name of the wing
 $wingId = 789; // int | The wing to rename
 $datasource = "tranquility"; // string | The server name you would like data from
 $token = "token_example"; // string | Access token to use if unable to set a header
@@ -872,7 +872,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleetId** | **int**| ID for a fleet |
- **naming** | [**\nullx27ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming**](../Model/PutFleetsFleetIdWingsWingIdNaming.md)| New name of the wing |
+ **naming** | [**\nullx27\ESI\nullx27\ESI\Models\PutFleetsFleetIdWingsWingIdNaming**](../Model/PutFleetsFleetIdWingsWingIdNaming.md)| New name of the wing |
  **wingId** | **int**| The wing to rename |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **string**| Access token to use if unable to set a header | [optional]

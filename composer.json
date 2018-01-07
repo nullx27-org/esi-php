@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "nullx27ESI\\" : "src/" }
+        "psr-4": { "nullx27\\ESI\\" : "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "nullx27ESI\\" : "test/" }
+        "psr-4": { "nullx27\\ESI\\" : "test/" }
     }
 }

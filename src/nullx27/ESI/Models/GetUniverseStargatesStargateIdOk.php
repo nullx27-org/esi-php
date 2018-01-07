@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetUniverseStargatesStargateIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,9 +61,9 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
         'stargateId' => 'int',
         'name' => 'string',
         'typeId' => 'int',
-        'position' => '\nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdPosition',
+        'position' => '\nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdPosition',
         'systemId' => 'int',
-        'destination' => '\nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdDestination'
+        'destination' => '\nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdDestination'
     ];
 
     /**
@@ -347,7 +347,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdPosition
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdPosition
      */
     public function getPosition()
     {
@@ -357,7 +357,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdPosition $position position
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdPosition $position position
      *
      * @return $this
      */
@@ -395,7 +395,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets destination
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdDestination
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdDestination
      */
     public function getDestination()
     {
@@ -405,7 +405,7 @@ class GetUniverseStargatesStargateIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets destination
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdDestination $destination destination
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetUniverseStargatesStargateIdDestination $destination destination
      *
      * @return $this
      */

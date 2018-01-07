@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetFwStats200Ok Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
         'factionId' => 'int',
         'pilots' => 'int',
         'systemsControlled' => 'int',
-        'kills' => '\nullx27ESI\nullx27\ESI\Models\GetFwStatsKills',
-        'victoryPoints' => '\nullx27ESI\nullx27\ESI\Models\GetFwStatsVictoryPoints'
+        'kills' => '\nullx27\ESI\nullx27\ESI\Models\GetFwStatsKills',
+        'victoryPoints' => '\nullx27\ESI\nullx27\ESI\Models\GetFwStatsVictoryPoints'
     ];
 
     /**
@@ -335,7 +335,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets kills
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwStatsKills
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwStatsKills
      */
     public function getKills()
     {
@@ -345,7 +345,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets kills
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwStatsKills $kills kills
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwStatsKills $kills kills
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Gets victoryPoints
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwStatsVictoryPoints
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwStatsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -369,7 +369,7 @@ class GetFwStats200Ok implements ModelInterface, ArrayAccess
     /**
      * Sets victoryPoints
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwStatsVictoryPoints $victoryPoints victoryPoints
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwStatsVictoryPoints $victoryPoints victoryPoints
      *
      * @return $this
      */

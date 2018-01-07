@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetUniverseTypesTypeIdOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,8 +72,8 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
         'portionSize' => 'int',
         'mass' => 'float',
         'graphicId' => 'int',
-        'dogmaAttributes' => '\nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]',
-        'dogmaEffects' => '\nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]'
+        'dogmaAttributes' => '\nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]',
+        'dogmaEffects' => '\nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]'
     ];
 
     /**
@@ -665,7 +665,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets dogmaAttributes
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[]
      */
     public function getDogmaAttributes()
     {
@@ -675,7 +675,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets dogmaAttributes
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[] $dogmaAttributes dogma_attributes array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaAttribute[] $dogmaAttributes dogma_attributes array
      *
      * @return $this
      */
@@ -689,7 +689,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Gets dogmaEffects
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[]
      */
     public function getDogmaEffects()
     {
@@ -699,7 +699,7 @@ class GetUniverseTypesTypeIdOk implements ModelInterface, ArrayAccess
     /**
      * Sets dogmaEffects
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[] $dogmaEffects dogma_effects array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetUniverseTypesTypeIdDogmaEffect[] $dogmaEffects dogma_effects array
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdClonesOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'lastCloneJumpDate' => '\DateTime',
-        'homeLocation' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesHomeLocation',
+        'homeLocation' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesHomeLocation',
         'lastStationChangeDate' => '\DateTime',
-        'jumpClones' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesJumpClone[]'
+        'jumpClones' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesJumpClone[]'
     ];
 
     /**
@@ -257,7 +257,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Gets homeLocation
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesHomeLocation
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesHomeLocation
      */
     public function getHomeLocation()
     {
@@ -267,7 +267,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Sets homeLocation
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesHomeLocation $homeLocation homeLocation
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesHomeLocation $homeLocation homeLocation
      *
      * @return $this
      */
@@ -305,7 +305,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Gets jumpClones
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesJumpClone[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesJumpClone[]
      */
     public function getJumpClones()
     {
@@ -315,7 +315,7 @@ class GetCharactersCharacterIdClonesOk implements ModelInterface, ArrayAccess
     /**
      * Sets jumpClones
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesJumpClone[] $jumpClones jump_clones array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdClonesJumpClone[] $jumpClones jump_clones array
      *
      * @return $this
      */

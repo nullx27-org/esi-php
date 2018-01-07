@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace nullx27ESI;
+namespace nullx27\ESI;
 
-use \nullx27ESI\Configuration;
-use \nullx27ESI\ApiException;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\Configuration;
+use \nullx27\ESI\ApiException;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * FactionWarfareApiTest Class Doc Comment
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

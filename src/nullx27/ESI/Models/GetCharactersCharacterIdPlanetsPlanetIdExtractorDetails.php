@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails Class Doc Comment
  *
  * @category Class
  * @description extractor_details object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'heads' => '\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdHead[]',
+        'heads' => '\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdHead[]',
         'productTypeId' => 'int',
         'cycleTime' => 'int',
         'headRadius' => 'float',
@@ -239,7 +239,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
     /**
      * Gets heads
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdHead[]
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdHead[]
      */
     public function getHeads()
     {
@@ -249,7 +249,7 @@ class GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails implements ModelIn
     /**
      * Sets heads
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdHead[] $heads heads array
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdPlanetsPlanetIdHead[] $heads heads array
      *
      * @return $this
      */

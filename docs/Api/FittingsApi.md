@@ -1,4 +1,4 @@
-# nullx27ESI\FittingsApi
+# nullx27\ESI\FittingsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -22,9 +22,9 @@ Delete a fitting from a character  --- Alternate route: `/dev/characters/{charac
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FittingsApi(
+$apiInstance = new nullx27\ESI\Api\FittingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -72,7 +72,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCharactersCharacterIdFittings**
-> \nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($characterId, $datasource, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[] getCharactersCharacterIdFittings($characterId, $datasource, $token, $userAgent, $xUserAgent)
 
 Get fittings
 
@@ -84,9 +84,9 @@ Return fittings of a character  --- Alternate route: `/dev/characters/{character
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FittingsApi(
+$apiInstance = new nullx27\ESI\Api\FittingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]**](../Model/GetCharactersCharacterIdFittings200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetCharactersCharacterIdFittings200Ok[]**](../Model/GetCharactersCharacterIdFittings200Ok.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCharactersCharacterIdFittings**
-> \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($characterId, $datasource, $fitting, $token, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated postCharactersCharacterIdFittings($characterId, $datasource, $fitting, $token, $userAgent, $xUserAgent)
 
 Create fitting
 
@@ -145,9 +145,9 @@ Save a new fitting for a character  --- Alternate route: `/dev/characters/{chara
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: evesso
-$config = nullx27ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = nullx27\ESI\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new nullx27ESI\Api\FittingsApi(
+$apiInstance = new nullx27\ESI\Api\FittingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -155,7 +155,7 @@ $apiInstance = new nullx27ESI\Api\FittingsApi(
 );
 $characterId = 56; // int | An EVE character ID
 $datasource = "tranquility"; // string | The server name you would like data from
-$fitting = new \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting(); // \nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting | Details about the new fitting
+$fitting = new \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting(); // \nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting | Details about the new fitting
 $token = "token_example"; // string | Access token to use if unable to set a header
 $userAgent = "userAgent_example"; // string | Client identifier, takes precedence over headers
 $xUserAgent = "xUserAgent_example"; // string | Client identifier, takes precedence over User-Agent
@@ -175,14 +175,14 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **int**| An EVE character ID |
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
- **fitting** | [**\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting | [optional]
+ **fitting** | [**\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsFitting**](../Model/PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting | [optional]
  **token** | **string**| Access token to use if unable to set a header | [optional]
  **userAgent** | **string**| Client identifier, takes precedence over headers | [optional]
  **xUserAgent** | **string**| Client identifier, takes precedence over User-Agent | [optional]
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated**](../Model/PostCharactersCharacterIdFittingsCreated.md)
+[**\nullx27\ESI\nullx27\ESI\Models\PostCharactersCharacterIdFittingsCreated**](../Model/PostCharactersCharacterIdFittingsCreated.md)
 
 ### Authorization
 

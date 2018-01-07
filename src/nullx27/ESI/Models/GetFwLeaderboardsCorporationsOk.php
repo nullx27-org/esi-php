@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace nullx27ESI\nullx27\ESI\Models;
+namespace nullx27\ESI\nullx27\ESI\Models;
 
 use \ArrayAccess;
-use \nullx27ESI\ObjectSerializer;
+use \nullx27\ESI\ObjectSerializer;
 
 /**
  * GetFwLeaderboardsCorporationsOk Class Doc Comment
  *
  * @category Class
  * @description 200 ok object
- * @package  nullx27ESI
+ * @package  nullx27\ESI
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kills' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsKills',
-        'victoryPoints' => '\nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsVictoryPoints'
+        'kills' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsKills',
+        'victoryPoints' => '\nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsVictoryPoints'
     ];
 
     /**
@@ -227,7 +227,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Gets kills
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsKills
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsKills
      */
     public function getKills()
     {
@@ -237,7 +237,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Sets kills
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsKills $kills kills
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsKills $kills kills
      *
      * @return $this
      */
@@ -251,7 +251,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Gets victoryPoints
      *
-     * @return \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsVictoryPoints
+     * @return \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsVictoryPoints
      */
     public function getVictoryPoints()
     {
@@ -261,7 +261,7 @@ class GetFwLeaderboardsCorporationsOk implements ModelInterface, ArrayAccess
     /**
      * Sets victoryPoints
      *
-     * @param \nullx27ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsVictoryPoints $victoryPoints victoryPoints
+     * @param \nullx27\ESI\nullx27\ESI\Models\GetFwLeaderboardsCorporationsVictoryPoints $victoryPoints victoryPoints
      *
      * @return $this
      */

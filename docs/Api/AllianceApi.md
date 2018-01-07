@@ -1,4 +1,4 @@
-# nullx27ESI\AllianceApi
+# nullx27\ESI\AllianceApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -23,7 +23,7 @@ List all active player alliances  --- Alternate route: `/dev/alliances/`  Altern
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\AllianceApi(
+$apiInstance = new nullx27\ESI\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceId**
-> \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk getAlliancesAllianceId($allianceId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk getAlliancesAllianceId($allianceId, $datasource, $userAgent, $xUserAgent)
 
 Get alliance information
 
@@ -76,7 +76,7 @@ Public information about an alliance  --- Alternate route: `/dev/alliances/{alli
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\AllianceApi(
+$apiInstance = new nullx27\ESI\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk**](../Model/GetAlliancesAllianceIdOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdOk**](../Model/GetAlliancesAllianceIdOk.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ List all current member corporations of an alliance  --- Alternate route: `/dev/
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\AllianceApi(
+$apiInstance = new nullx27\ESI\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -175,7 +175,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesAllianceIdIcons**
-> \nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($allianceId, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk getAlliancesAllianceIdIcons($allianceId, $datasource, $userAgent, $xUserAgent)
 
 Get alliance icon
 
@@ -186,7 +186,7 @@ Get the icon urls for a alliance  --- Alternate route: `/dev/alliances/{alliance
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\AllianceApi(
+$apiInstance = new nullx27\ESI\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk**](../Model/GetAlliancesAllianceIdIconsOk.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetAlliancesAllianceIdIconsOk**](../Model/GetAlliancesAllianceIdIconsOk.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAlliancesNames**
-> \nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[] getAlliancesNames($allianceIds, $datasource, $userAgent, $xUserAgent)
+> \nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[] getAlliancesNames($allianceIds, $datasource, $userAgent, $xUserAgent)
 
 Get alliance names
 
@@ -241,7 +241,7 @@ Resolve a set of alliance IDs to alliance names  --- Alternate route: `/dev/alli
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new nullx27ESI\Api\AllianceApi(
+$apiInstance = new nullx27\ESI\Api\AllianceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\nullx27ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]**](../Model/GetAlliancesNames200Ok.md)
+[**\nullx27\ESI\nullx27\ESI\Models\GetAlliancesNames200Ok[]**](../Model/GetAlliancesNames200Ok.md)
 
 ### Authorization
 
