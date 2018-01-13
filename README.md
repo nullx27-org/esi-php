@@ -1,3 +1,5 @@
+# THIS LIBRARY IS NO LONGER MAINTAINED
+
 # esi-php
 An OpenAPI for EVE Online
 
